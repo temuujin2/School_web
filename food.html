@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping web site</title>
+    <link rel="stylesheet" href="food_style.css">
+    <script src="https://kit.fontawesome.com/5e8cfaaea7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="shapes">
+        <div class="triangle1"></div>
+        <div class="triangle2"></div>
+        <div class="triangle3"></div>
+        <div class="triangle4"></div>
+        <div class="triangle5"></div>
+        <div class="triangle6"></div>
+        <div class="triangle7"></div>
+        <div class="triangle8"></div>
+        <div class="triangle9"></div>
+    </div>
+    <main>
+        <header>
+            <div class="top-menu">
+                <div class="logo">
+                    <p>Shop<span>ping</span></p>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="">Нүүр</a></li>
+                        <li><a href="">Бүтээгдхүүн</a></li>
+                        <li><a href="">Үйлчилгээ</a></li>
+                        <li><a href="">Холбоо барих</a></li>
+                    </ul>
+                </div>
+                <div class="icon-menu">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="search" name="search" placeholder="Search items">
+                    <i class="fa-solid fa-basket-shopping" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><p id="count">0</p></i>
+                    <i onclick="myFunction()" class="fa-regular fa-circle-user dropbtn">
+                        <div id="myDropdown" class="dropdown-container">
+                        <li>
+                            <div class="drop-img"></div>
+                            <a href="">Хэрэглэгч</a>
+                            <a href="">Хэтэвч</a>
+                            <a href="file:///Users/temuujin/Downloads/JS%20shopping/shopping%20web/login.html">Гарах</a>
+                        </li>
+                    </div></i>
+                </div>
+            </div>
+        </header>
+
+        <section id="mainTop">
+            <div class="section1">
+                <h1>Чанартай барааг нэг доороос</h1>
+                <input type="search" placeholder="Хайх зүйлээ энд бичнэ үү?">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="section2"></div>
+            <div class="section3"></div>
+        </section>
+        <div class="menu-2">
+            <ul>
+                <li><a href="">Электроник</a></li>
+                <li><a href="">Хувцас</a></li>
+                <li><a id="select-book" href="">Ном</a></li>
+                <li><a href="">Гэр ахуй</a></li>
+                <li><a href="">Хүүхдийн</a></li>
+                <li><a href="">Бүх бараа</a></li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="produsts">
+
+                    <div class="row1">
+                        <div class="product1">
+                            <div class="product">
+                                <img class="product-img" src="./img/timthumb-5.jpeg" alt="prd1" onmouseover="animateImg(this)" onmouseout="normalImg(this)" />
+                                <div class="card-body">
+                                    <h5 class="card-title text-info bold product-name">Цагаан бороо</h5>
+                                    <p class="card-text text-success product-price">22500 төг</p>
+
+                                    <button class="btn" type="button" data-action="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Сагсанд нэмэх</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row2">
+                        <div class="product2">
+                            <div class="product">
+                                <img class="product-img" src="./img/timthumb-6.jpeg" alt="prd2" onmouseover="animateImg(this)" onmouseout="normalImg(this)" />
+                                <div class="card-body">
+                                    <h5 class="card-title text-info product-name">Кайзен арга</h5>
+                                    <p class="card-text text-success product-price">9000 төг</p>
+
+                                    <button class="btn" type="button" data-action="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Сагсанд нэмэх</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row3">
+                        <div class="product3">
+                            <div class="product">
+                                <img class="product-img" src="./img/timthumb-7.jpeg" alt="prd3" onmouseover="animateImg(this)" onmouseout="normalImg(this)" />
+                                <div class="card-body">
+                                    <h5 class="card-title text-info product-name">Томоор мөрөөд</h5>
+                                    <p class="card-text text-success product-price">15750 төг</p>
+
+                                    <button class="btn" type="button" data-action="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Сагсанд нэмэх</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row4">
+                        <div class="product4">
+                            <div class="product">
+                                <img class="product-img" src="./img/timthumb-8.jpeg" alt="prd4" onmouseover="animateImg(this)" onmouseout="normalImg(this)" />
+                                <div class="card-body">
+                                    <h5 class="card-title text-info product-name">Өөрийгөө чөлөөл</h5>
+                                    <p class="card-text text-success product-price">13500 төг</p>
+
+                                    <button class="btn" type="button" data-action="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Сагсанд нэмэх</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-2">
+            <div class="row-2">
+                <div class="produsts">
+
+                    <div class="row5">
+                        <div class="product5">
+                            <div class="product">
+                                <img class="product-img" src="./img/timthumb.jpeg" alt="prd5" onmouseover="animateImg(this)" onmouseout="normalImg(this)" />
+                                <div class="card-body">
+                                    <h5 class="card-title text-info bold product-name">Даниел Гоулман-1</h5>
+                                    <p class="card-text text-success product-price">12500 төг</p>
+
+                                    <button class="btn" type="button" data-action="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Сагсанд нэмэх</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row6">
+                        <div class="product6">
+                            <div class="product">
+                                <img class="product-img" src="./img/timthumb-2.jpeg" alt="prd6" onmouseover="animateImg(this)" onmouseout="normalImg(this)" />
+                                <div class="card-body">
+                                    <h5 class="card-title text-info product-name">Ад үзэгдэх зориг-1</h5>
+                                    <p class="card-text text-success product-price">11900 төг</p>
+
+                                    <button class="btn" type="button" data-action="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Сагсанд нэмэх</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row7">
+                        <div class="product7">
+                            <div class="product">
+                                <img class="product-img" src="./img/timthumb-1.jpeg" alt="prd7" onmouseover="animateImg(this)" onmouseout="normalImg(this)" />
+                                <div class="card-body">
+                                    <h5 class="card-title text-info product-name">Манхан DUNE-1</h5>
+                                    <p class="card-text text-success product-price">22100 төг</p>
+
+                                    <button class="btn" type="button" data-action="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Сагсанд нэмэх</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row8">
+                        <div class="product8">
+                            <div class="product">
+                                <img class="product-img" src="./img/timthumb-4.jpeg" alt="prd8" onmouseover="animateImg(this)" onmouseout="normalImg(this)" />
+                                <div class="card-body">
+                                    <h5 class="card-title text-info product-name">Бодлогууд-1</h5>
+                                    <p class="card-text text-success product-price">12000 төг</p>
+
+                                    <button class="btn" type="button" data-action="add-to-cart"><i class="fa-solid fa-basket-shopping"></i>Сагсанд нэмэх</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="id01" class="modal">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <form class="modal-content" action="/action_page.php">
+                <div class="carts">
+                    <h4 class="text-center">
+                        <div class="cart-drop-img"></div> Сагс</h4>
+                    <div class="cart"></div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+
+
+    <script src="food_app.js"></script>
+</body>
+
+</html>
