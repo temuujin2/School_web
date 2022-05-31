@@ -1017,8 +1017,7 @@ h4 {
     height: 100%;
     overflow: auto;
     background: rgba(0, 0, 0, 0.5);
-    /* filter: blur(8px);
-    -webkit-filter: blur(8px); */
+
     padding-top: 0px;
 }
 
