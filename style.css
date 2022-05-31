@@ -58,20 +58,28 @@ li {
     z-index: 3;
 }
 
-.menu ul li:hover {
-    height: 2px;
-    width: fit-content;
-    background: #31aada;
-    transition: all 1s ease-out;
-}
-
-.menu ul a {
+.link{
     text-decoration: none;
     color: rgb(54, 54, 54);
     font-size: 14px;
-
+    position: relative;
 }
-
+.link::after {
+    content: '';
+    width: 100%;
+    height: 1.5px;
+    background-color: #31aada;
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .45s ease;
+}
+.link:hover::after {
+    transform: scaleX(1);
+}
 .icon-menu {
     position: relative;
     margin-top: 15px;
@@ -137,8 +145,8 @@ li {
     position: relative;
 }
 .text-wrap-1 {
-    width: 70%;
-    margin-left: 75px;
+    width: 75%;
+    margin-left: 0;
     
 }
 .text-wrap-1 span {
@@ -218,13 +226,9 @@ li {
 
 .section-2 {
     width: 70%;
-
     border-radius: 15px;
-    background: gold;
-    background-image: url(./img/purepng.com-2cd43b-1f2f8a8fe0444c828f27d6241c173477-mv2musicheadphoneearphoneslisteningearssounds-231519334370fe7mk.png);
-    background-size: 200px;
-    background-repeat: no-repeat;
-    background-position: center;
+    overflow: hidden;
+    
 }
 
 /* -----------------mainTop End--------------------- */
@@ -233,7 +237,7 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 70px;
     width: 100vw;
     height: 60vh;
     max-width: 1200px;
@@ -247,7 +251,7 @@ li {
 }
 .level-sections {
     display: flex;
-    margin-top: 40px;
+    margin-top: 60px;
     gap: 50px;
     width: 92%;
     height: 100%;
@@ -390,14 +394,15 @@ li {
     margin-top: 30px;
     width: 100%;
     height: 500px;
-    background: #2880be;
+    border: 1.5px solid #f27334;
+    border-radius: 15px;
 }
 #main-3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 60px;
     width: 100vw;
     max-width: 1200px;
     resize: both;
@@ -411,7 +416,7 @@ li {
 }
 
 .wrapper-3 {
-    margin-top: 20px;
+    margin-top: 40px;
     display: flex;
     justify-content: space-between;
     gap: 20px;
