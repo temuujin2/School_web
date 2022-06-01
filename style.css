@@ -69,7 +69,7 @@ li {
     content: '';
     width: 100%;
     height: 1.5px;
-    background-color: #31aada;
+    background-color: #f27334;
     border-radius: 4px;
     position: absolute;
     left: 0;
@@ -85,39 +85,84 @@ li {
     position: relative;
     margin-top: 15px;
     display: flex;
+    justify-content: flex-start;
     gap: 30px;
+
+}
+.icon-menu-2 {
+    position: relative;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+
 }
 /* ----------search box */
-
-/* ----------search box end */
-
-.icon-menu p {
+form{
     position: absolute;
-    top: -15px;
-    left: 56px;
-    width: 20px;
-    height: 20px;
-    background: rgb(14, 218, 65);
-    border-radius: 50%;
-    font-size: 10px;
-    font-weight: 400;
-    text-align: center;
+    top: -23px;
+    left: -20px;
+    transition: all 1s;
+    width: 39.5px;
+    height: 39.5px;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 25px;
     padding: 5px;
 }
 
+
 .icon-menu input {
     position: absolute;
-    right: 92px;
-    top: -5px;
+    top: 0;
+    left: 0;
+    width: 100%;;
+    height: 39.5px;
+    line-height: 30px;
+    outline: 0;
     border: 0;
-    outline: none;
-    width: 200px;
-    height: 25px;
-    border-radius: 5px;
-    padding-left: 10px;
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1), -2px -2px 5px rgba(0, 0, 0, 0.1);
     display: none;
+    font-size: 16px;
+    font-weight: 200;
+    border-radius: 20px;
+    padding: 0 20px;
+    border: 0.6px solid #f27334;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+
 }
+.fa-search{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 39.5px;
+    height: 39.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: #f27334;
+    text-align: center;
+    font-size: 19px;
+
+}
+form:hover,
+form:valid{
+    width: 200px;
+    cursor: pointer;
+}
+form:hover input,
+form:valid input{
+    display: block;
+    opacity: 1;
+}
+form:hover .fa-search,
+form:valid .fa-search{
+    background: #f27334;
+    color: white;
+
+}
+
+/* ----------search box end */
 
 .fa-basket-shopping {
     cursor: pointer;
