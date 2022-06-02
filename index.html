@@ -51,19 +51,23 @@
                         <form action="">
                             <input type="search" required>
                             <i class="fa fa-search"></i>
-                          </form>
+                        </form>
                     </div>
                 </div>
                 <div class="icon-menu-2">
                     
-                    <i class="fa-solid fa-basket-shopping" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"></i>
+                    <div class="enroll-btn" onclick="document.getElementById('id01').style.display='block'">
+                    Enroll Now</div>
                     <i onclick="myFunction()" class="fa-regular fa-circle-user dropbtn">
                         <div id="myDropdown" class="dropdown-container">
                         <li>
-                            <div class="drop-img"></div>
-                            <a href="">Хэрэглэгч</a>
-                            <a href="">Хэтэвч</a>
-                            <a href="file:///Users/temuujin/Downloads/JS%20shopping/shopping%20web/login.html">Гарах</a>
+                            <div class="drop-img">
+                                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                                <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_llyvnr13.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+                            </div>
+                            Хэрэглэгч
+                            <a href="">Teacher login</a>
+                            <a href="">Student login</a>
                         </li>
                     </div></i>
                 </div>
@@ -197,12 +201,9 @@
         <div id="id01" class="modal">
             <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
             <form class="modal-content" action="/action_page.php">
-                <div class="carts">
-                    <h4 class="text-center">
-                        <div class="cart-drop-img"></div> Сагс</h4>
-                    <div class="cart"></div>
-                </div>
+                    <div class="enroll">Сургуульд элсэх</div>
             </form>
+            <div class="enroll-2"></div>
         </div>
 
 

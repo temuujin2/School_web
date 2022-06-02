@@ -69,7 +69,7 @@ li {
     content: '';
     width: 100%;
     height: 1.5px;
-    background-color: #f27334;
+    background: linear-gradient(45deg, #fec144, #f27334);
     border-radius: 4px;
     position: absolute;
     left: 0;
@@ -98,7 +98,7 @@ li {
 
 }
 /* ----------search box */
-form{
+.icon-menu form{
     position: relative;
     top: -23px;
     left: -20px;
@@ -644,9 +644,9 @@ figure.snip1084 {
     justify-content: center;
     width: 1200px;
     height: 300px;
-    resize: both;
     border-radius: 15px;
     overflow: hidden;
+
 }
 .div-1 {
     display: flex;
@@ -693,25 +693,26 @@ figure.snip1084 {
     display: block;
 }
 
-#select-book {
-    color: rgb(14, 218, 65);
-}
 
 .drop-img {
-    width: 70px;
-    height: 70px;
-    background-image: url(./img/shopping-bag.png);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+    position: absolute;
+    top: -20px;
+    left: 70px;
+    width: 120px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+
+
 }
 
 .dropdown-container {
     display: none;
     position: absolute;
+    top: 30px;
     right: -20px;
     width: 180px;
-    height: 220px;
+    height: 200px;
     background: white;
     border-radius: 10px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
@@ -722,20 +723,25 @@ figure.snip1084 {
 
 .dropdown-container li a {
     width: 140px;
-    padding-left: 10px;
-    padding-top: 6px;
-    height: 25px;
+    text-align: center;
+    padding-top: 10px;
+    height: 35px;
     border-radius: 10px;
     background: rgb(244, 244, 244);
     text-decoration: none;
     color: rgb(37, 37, 37);
     font-weight: 400;
     font-size: 14px;
-    transition: all .2s ease-out;
-}
+    /* transition: all .2s ease-out; */
+    z-index: 2;
+    margin-top: 20px;
 
+}
+.icon-menu-2 i:hover  {
+    color: #f27334;
+}
 .dropdown-container li a:hover {
-    background: rgb(14, 218, 65);
+    background: linear-gradient(45deg, #fec144, #f27334);
     color: white;
 }
 
@@ -743,7 +749,8 @@ figure.snip1084 {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    gap: 15px;
+    margin-top: 30px;
+
 }
 
 .show {
@@ -752,116 +759,96 @@ figure.snip1084 {
 
 
 /* ========================================== */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 5;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
 
+}
 
-.carts {
-    position: absolute;
-    right: 50px;
-    padding: 0 20px;
+.modal-content {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 550px;
-    height: auto;
-    background: white;
+    justify-content: center;
+    margin-left: 80px;
+    margin-top: 28px;
+    height: 200px;
+    background-color: #f27334;
+    border-radius: 15px 15px 0 0;
+}
+.enroll-btn {
+    position: absolute;
+    padding-top: 5px;
+    top: -7px;
+    right: 40px;
+    width: 100px;
+    height: 30px;
+    background: linear-gradient(45deg, #fec144, #f27334);
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
     border-radius: 15px;
+    transform: translateY(0);
+    transition: all .8s ease-in-out;
+    cursor: pointer;
+}
+.enroll-btn:hover {
+    transform: translateX(8px);
+}
+.enroll {
+    margin-top: 10px;
+    color: white;
+}
+.enroll-2 {
+    position: absolute;
+    top: 70px;
+    left: 80px;
+    width: 88vw;
+    height: 600px;
+    background: white;
 }
 
-h4 {
-    padding-top: 25px;
+
+
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: 400;
+    color: #f1f1f1;
 }
 
-.cart-drop-img {
-    background-image: url(./img/shopping-bag.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 27px;
-    height: 27px;
-    margin-top: -2px;
-    padding-left: 40px;
-    float: left;
-}
-
-.carts button {
-    padding: 5px 20px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: none;
+.close:hover,
+.close:focus {
+    color: #db0f00;
     cursor: pointer;
 }
 
-.badge-danger {
-    background: linear-gradient(45deg, rgb(218, 14, 14), rgb(255, 61, 61));
-    color: white;
-    width: 200px;
-    height: 40px;
-    padding-left: 10px;
-}
 
-.badge-danger i {
-    margin-right: 10px;
-}
-
-.badge-dark {
-    padding: 10 20px;
-    width: 500px;
-    height: 40px;
-    background: linear-gradient(45deg, rgb(14, 218, 65), rgb(107, 206, 176));
-    color: white;
-    transition: all .5s ease-in;
-}
-
-.badge-dark:hover {
-    background: linear-gradient(45deg, rgb(218, 79, 14), rgb(206, 199, 107));
-}
-
-.badge-dark i {
-    margin-right: 10px;
-}
-
-.badge-cancel {
-    background: rgb(235, 53, 53);
-    color: white;
-}
-
-.flex_row {
-    width: 500px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.cart_item_quantity {
-    margin: 5px 5px 0 5px;
-}
-
-.price-box {
-    margin-top: 20px;
-}
-
-.text-items {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-}
-
-
-/* #mainTop {
-    display: flex;
-    justify-content: center;
-    width: 800px;
-    height: 400px;
-    background: green;
-} */
-
-
-/* ========background shapes=== */
-
-/* #background-shapes {
+/* =====================+Footer+============================ */
+footer {
+    width: 100vw;
     display: flex;
     align-items: center;
-    justify-content: center;
-    position: relative;
-} */
+    background: black;
+}
+.footer-wrap {
+    width: 100vw;
+    height: 400px;
+    background: black;
+    margin-top: 40px;
+
+}
+
+
+/* ================== background shapes ==================== */
+
 .shapes {
     position: absolute;
 }
@@ -1072,58 +1059,4 @@ h4 {
     border-bottom: 40px solid transparent;
 
 }
-/* =========================== */
-
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background: rgba(0, 0, 0, 0.5);
-
-    padding-top: 0px;
-}
-
-h4 {
-    padding: 15px;
-    /* background: linear-gradient(45deg, rgb(14, 218, 65), rgb(107, 206, 176)); */
-}
-
-.modal-content {
-    background-color: #fefefe;
-    margin: 5% auto 15% auto;
-    width: 80%;
-}
-
-.close {
-    position: absolute;
-    right: 35px;
-    top: 15px;
-    font-size: 40px;
-    font-weight: 400;
-    color: #f1f1f1;
-}
-
-.close:hover,
-.close:focus {
-    color: #db0f00;
-    cursor: pointer;
-}
-
-footer {
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    background: black;
-}
-.footer-wrap {
-    width: 100vw;
-    height: 400px;
-    background: black;
-    margin-top: 40px;
-
-}
+/* ========================================================= */
