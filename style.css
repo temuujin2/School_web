@@ -765,25 +765,24 @@ figure.snip1084 {
 .modal {
     display: none;
     position: fixed;
-    margin: auto;
     z-index: 5;
     right: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7);
 
 }
-
-.modal-content {
+.form-wrapp {
     display: flex;
+    /* align-items: center; */
     justify-content: center;
-    margin-left: 80px;
-    margin-top: 28px;
-    height: 200px;
-    background-color: #f27334;
-    border-radius: 15px 15px 0 0;
+    margin-top: 60px;
+    width: 100%;
+    height: 100%;
+
 }
+
 .enroll-btn {
     margin: auto;
     position: absolute;
@@ -805,18 +804,219 @@ figure.snip1084 {
 .enroll-btn:hover {
     transform: translateX(8px);
 }
+/* ====================enroll form=================== */
 .enroll {
-    margin-top: 10px;
-    color: white;
-}
-.enroll-2 {
+    position: absolute;
     display: flex;
     justify-content: center;
-    position: absolute;
     top: 70px;
     left: 80px;
-    width: 88vw;
-    height: 600px;
+    width: 50%;
+    max-width: 600px;
+    height: 500px;
+    background: white;
+    text-align: center;
+    
+}
+#progressbar     {
+    display: flex;
+    position: relative;
+}
+.line-li {
+    position: absolute;
+    top: 22px;
+    left: 65px;
+    width: 300px;
+    height: 5px;
+    background: rgb(207, 207, 207);
+}
+#active1, #active2, #active3 {
+    margin-left: 65px;
+    padding-top: 3px;
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: rgb(207, 207, 207);
+    color: white;
+}
+#active1 {
+    background: #f27334;
+}
+#first, #second, #third {
+    border: none;
+}
+.content-wrapp-2 {
+    display: flex;
+    justify-content: center;
+}
+.main-wrapp-modal {
+    margin-left: 70px;
+}
+.main-wrapp-modal ul {
+    margin-top: 20px;
+    margin-left: -80px;
+}
+/* #progressbar {
+    border: none;
+}     */
+
+fieldset{
+    display:none;
+    width: 350px;
+    padding:20px;
+    margin-top:50px;
+    margin-left: -50px;
+}
+#second, #third {
+    margin-top: 30px;
+}
+#first{
+    display: block;
+    margin-left: -60px;
+    margin-top: 30px;
+}
+#first h2{
+    margin-left: 10px;
+}
+#first p{
+    margin-left: 6px;
+}
+.title {
+    margin-top: -20px;
+}
+.options {
+    margin-top: 10px;
+    width: 350px;
+}
+.content-wrapp-2 input {
+    width:100%;
+    height:40px;
+    padding:5px;
+    margin-top: 15px;
+}
+textarea{
+    width:100%;
+    margin: 10px 0;
+    height:70px;
+    padding:5px;
+}
+.button-wrapp-np {
+    display: flex;
+}
+.gender-choose {
+    display: flex;  
+}
+.gender-choose p {
+    margin-top: 20px;
+    color: grey;
+}
+.gender-choose input {
+    height: 20px;
+    width: 70px;
+}
+.checkbox {
+    font-size: 15px;
+    font-weight: 200;
+    width: 100%;
+    margin: 15px 0 0 30px;
+    position: relative;
+    display: block;
+    color: rgb(114, 114, 114);
+}
+
+.checkbox input[type="checkbox"] {
+    width: auto;
+    opacity: 0.00000001;
+    position: absolute;
+    left: 0;
+}
+.checkbox label {
+    position: relative;
+}
+.checkbox label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 4px;
+    width: 20px;
+    height: 20px;
+    transition: transform 0.28s ease;
+    border-radius: 3px;
+    border: 2px solid #777777;
+}
+.checkbox label:after {
+  content: '';
+    display: block;
+    width: 10px;
+    height: 5px;
+    border-bottom: 2px solid #f27334;
+    border-left: 2px solid #f27334;
+    -webkit-transform: rotate(-45deg) scale(0);
+    transform: rotate(-45deg) scale(0);
+    transition: transform ease 0.25s;
+    will-change: transform;
+    position: absolute;
+    top: 12px;
+    left: 10px;
+}
+.checkbox input[type="checkbox"]:checked ~ label::before {
+    color: #f27334;
+}
+
+.checkbox input[type="checkbox"]:checked ~ label::after {
+    -webkit-transform: rotate(-45deg) scale(1);
+    transform: rotate(-45deg) scale(1);
+}
+
+.checkbox label {
+    min-height: 34px;
+    display: block;
+    padding-left: 40px;
+    margin-bottom: 0;
+    font-weight: normal;
+    cursor: pointer;
+    /* vertical-align: sub; */
+}
+.checkbox label span {
+    position: absolute;
+    top: 5px;
+    left: 40px;
+}
+.checkbox input[type="checkbox"]:focus + label::before {
+    outline: 0;
+}
+
+.content-wrapp-2 input[type=submit],.content-wrapp-2 input[type=button]{
+    width:120px;
+    margin:15px 25px;
+    padding:5px;
+    height:40px;
+    background: linear-gradient(45deg, #fec144, #f27334);
+    border:none;
+    border-radius:4px;
+    color:#fff;
+    cursor: pointer;
+}
+.content-wrapp-2 li {
+    margin-right: 40px;
+    display:inline;
+    color:#c1c5cc;
+}
+/* ================== alert box ======================= */
+
+/* ==================enroll form end================== */
+.enroll-2 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 70px;
+    left: 700px;
+    width: 50%;
+    max-width: 600px;
+    height: 500px;
     background: white;
 }
 

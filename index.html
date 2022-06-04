@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/5e8cfaaea7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
 </head>
 
 <body>
@@ -197,15 +198,96 @@
         
 
 
-
+<!-- =-------------------------------------------------------- -->
         <div id="id01" class="modal">
+            <div class="form-wrapp">
             <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-            <form class="modal-content" action="/action_page.php">
-                    <div class="enroll">Сургуульд элсэх</div>
-            </form>
-            <div class="enroll-2"></div>
-        </div>
+            <div class="enroll"><p></p>
 
+                <div class="content-wrapp-2">
+                    <!-- Multistep Form -->
+                    <div class="main-wrapp-modal">
+                        <div action="#" class="regform" method="get">
+                        <!-- Progressbar -->
+                        <ul id="progressbar">
+                            <div class="line-li"></div>
+                            <li id="active1">1</li>
+                            <li id="active2">2</li>
+                            <li id="active3">3</li>
+                        </ul>
+                        <!-- Fieldsets -->
+                        <fieldset id="first">
+                            <h2 class="title">Суралцагчийн анкет</h2>
+                            <p class="subtitle">Алхам 1</p>
+                            <input class="text_field" name="fname" placeholder="Эцэг, эхийн нэр" type="text" value="">
+                            <input class="text_field" name="lname" placeholder="Өөрийн нэр" type="text" value="">
+                            <input class="text_field" name="rd" placeholder="Регистеийн дугаар" type="text" value="">
+                            <select class="options">
+                                <option>--Суралцагчийн нас--</option>
+                                <option>6 нас</option>
+                                <option>7 нас</option>
+                                <option>8 нас</option>
+                                <option>9 нас</option>
+                                <option>10 нас</option>
+                                <option>11 нас</option>
+                                <option>12 нас</option>
+                                <option>13 нас</option>
+                                <option>14 нас</option>
+                                <option>15 нас</option>
+                                <option>16 нас</option>
+                                <option>17 нас</option>
+                                <option>18 нас</option>
+                                
+                            </select>
+                            <div class="gender-choose"><p>Хүйс</p> 
+                                <div class="checkbox">
+                                   <input type="checkbox" id="checkbox" name="" value="">
+                                   <label for="checkbox"><span>Эрэгтэй</span></label>
+                                </div>
+                              
+                                <div class="checkbox">
+                                   <input type="checkbox" id="checkbox2" name="" value="">
+                                   <label for="checkbox2"><span>Эмэгтэй</span></label>
+                                </div>
+                              </div>
+                            <input id="next_btn1" onclick="next_step1()" type="button" value="Next">
+                        </fieldset>
+                        <fieldset id="second">
+                            <h2 class="title">Гэрийн хаяг</h2>
+                            <p class="subtitle">Алхам 2</p>
+                            <input class="text_field" name="marks" placeholder="Амьдран суугаа хороо, дүүрэг" type="text" value="">
+                            <input class="text_field" name="marks" placeholder="Байр, гудамж" type="text" value="">
+                            <input class="text_field" name="pyear" placeholder="хаяг, тоот" type="text" value="">
+                            <input class="text_field" name="univ" placeholder="Ам бүлийн тоо" type="text">
+                            <div class="button-wrapp-np">
+                                <input id="pre_btn1" onclick="prev_step1()" type="button" value="Previous">
+                                <input id="next_btn2" name="next" onclick="next_step2()" type="button" value="Next">
+                            </div>
+                        </fieldset>
+                        <fieldset id="third">
+                            <h2 class="title">Холбоо барих</h2>
+                            <p class="subtitle">Алхам 3</p>
+                            <input class="text_field" name="fname" placeholder="Холбоо барих утасны дугаар 1" type="text">
+                            <input class="text_field" name="lname" placeholder="Холбоо барих утасны дугаар 2" type="text">
+                            <input class="text_field" name="cont" placeholder="Холбогдох имэйл хаяг" type="text">
+                            
+                            <div class="button-wrapp-np">
+                                <input id="pre_btn2" onclick="prev_step2()" type="button" value="Previous">
+                                <input class="submit_btn" onclick="validation(event)" type="submit" value="Submit">
+                                
+                            </div>
+                        </fieldset>
+                    </div>
+                    </div>
+                    </div>
+
+                
+            </div>
+        
+            <div class="enroll-2"></div>
+            </div>
+        </div>
+<!-- ---------------------------------------------------------- -->
 
             <div class="footer-wrap">
                 <div class="footer-wrap-1">
