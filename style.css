@@ -69,7 +69,7 @@ main {
     height: 0px;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
-    border-radius: 50%;
+    border-radius: 52%;
     background: #ffb510;
     -webkit-animation: load 0.6s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
     animation: popIn 0.8s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
