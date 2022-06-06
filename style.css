@@ -1082,6 +1082,9 @@ fieldset{
     padding:5px;
     margin-top: 15px;
 }
+.text_field {
+    outline-color: #fec144;
+}
 textarea{
     width:100%;
     margin: 10px 0;
