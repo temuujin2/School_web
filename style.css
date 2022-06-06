@@ -1253,6 +1253,7 @@ textarea{
     width: 250px;
     height: 100%;
     display: flex;
+    flex-direction: column;
     gap: 20px;
     flex-direction: column;
     justify-content: center;
@@ -1300,14 +1301,40 @@ textarea{
 .content-1 button:hover {
     transform: translateX(10px);
 }
-.content-2 {
-    background: #a5daff;
+
+.content-2 ul,
+.content-3 ul,
+.content-4 ul {
+    list-style: none;
 }
-.content-3 {
-    background: #c9e8ff;
+.content-2 p,
+.content-3 p,
+.content-4 p {
+    margin-left: 40px;
+}
+.content-2 ul a,
+.content-3 ul a,
+.content-4 ul a {
+    margin-left: 50px;
+    text-decoration: none;
+    color: rgb(197, 197, 197);
+    font-size: 13px;
+    font-weight: 100;
+}
+.content-2 ul a:hover,
+.content-3 ul a:hover,
+.content-4 ul a:hover {
+    color: #ffb510;
+}
+.content-2 ul {
+    margin-top: 5px;
+}
+
+.content-3 ul{
+    list-style: none;
 }
 .content-4 {
-    background: #d9efff;
+    list-style: none;
 }
 .copy-right {
     display: flex;
