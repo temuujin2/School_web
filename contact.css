@@ -759,22 +759,121 @@ textarea{
 }
 /* =====================+ Contact section +=================== */
 
-.contact-wrapp {
+.contacts-wrapp {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin-top: 80px;
+    align-items: center;
+    width: 100vw;
+    background-color: rgb(243, 243, 243);
+}
+.contact-in-wrapp {
+    width: 1100px;
+    display: flex;
+
 }
 .contact-input-wrapper {
     display: flex;
     flex-direction: column;
+    width: 1;
     gap: 15px;
+    padding: 20px;
+    margin: 60px 0 40px 0;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+.contact-input-wrapper h5 {
+    font-size: 22px;
+    font-weight: 500;
+}
+.contact-input-wrapper p {
+    width: 620px;
+}
+.contact-input-wrapper input {
+    width: 300px;
+    height: 40px;
+    padding: 5px;
+    border: none;
+    border: 0.8px solid rgb(226, 226, 226);
+    border-radius: 5px;
+    outline-color: #fec144;
+}
+.top-input {
+    margin-right: 15px;
+}
+#big-text {
+    width: 605px;
+    height: 120px;
+    text-align: start;
+}
+.contact-input-wrapper a {
+    padding-top: 8px;
+    text-align: center;
+    text-decoration: none;
+    width: 120px;
+    height: 35px;
+    background: linear-gradient(45deg, #fec144, #f27334);
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    transform: translateY(0);
+    transition: all .8s ease-in-out;
+}
+.contact-input-wrapper a:hover {
+    transform: translateX(10px);
+}
+.contact-wrapp-2 {
+    margin: 60px 0 0 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+.contact-wrapp-2>div {
+    padding: 15px 13px 0 15px;
+    width: 400px;
+    height: 90px;
+    background: white;
+    border-radius: 5px;
+}
+.contact-wrapp-2 p {
+    font-size: 14px;
+    font-weight: 300;
+    color: gray;
+}
+.contact-shape {
+    margin-top: 5px;
+    margin-right: 20px;
+    float: left;
+    width: 50px;
+    height: 50px;
+    border: 3px solid #ffb510;
+    border-radius: 50%;
 }
 .map-wrapp {
+    display: flex;
+    justify-content: center;
+}
+.map {
     width: 1100px;
     height: 450px;
-    border: 1px solid #ffb510;
+    text-align: center;
     border-radius: 15px;
     overflow: hidden;
+}
+.contact-texts {
+    margin: 30px;
+    text-align: center;
+}
+.contact-texts h1, .contact-texts span{
+    font-size: 30px;
+    font-weight: 500;
+}
+.contact-texts p {
+    width: 1000px;
+    padding: 0 120px 0 120px;
+    font-size: 14px;
+    font-weight: 300;
 }
 /* =====================+ Footer +============================ */
 
