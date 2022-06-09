@@ -28,30 +28,31 @@ main {
     justify-content: center;
     align-items: center;
     z-index: 5;
-  }
-  .container-logo .box-logo {
+}
+.container-logo .box-logo {
     width: 180px;
+    margin-top: -15px;
     position: relative;
     display: flex;
     justify-content: center;
     flex-direction: column;
-  }
-  .container-logo .box-logo .title-logo {
+}
+.container-logo .box-logo .title-logo {
     width: 100%;
     position: relative;
     display: flex;
     align-items: center;
     height: 40px;
-  }
-  .container-logo .box-logo .title-logo  .block-logo {
+}
+.container-logo .box-logo .title-logo  .block-logo {
     width: 0%;
     height: inherit;
     background: #ffb510;
     position: absolute;
     animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
     display: flex;
-  }
-  .container-logo .box-logo .title-logo h1 {
+}
+.container-logo .box-logo .title-logo h1 {
     font-family: "Poppins";
     color: #2880be;
     font-size: 28px;
@@ -63,8 +64,8 @@ main {
     display: flex;
     align-items: baseline;
     position: relative;
-  }
-  .container-logo .box-logo .title-logo h1 span {
+}
+.container-logo .box-logo .title-logo h1 span {
     width: 0px;
     height: 0px;
     -webkit-border-radius: 50%;
@@ -79,16 +80,16 @@ main {
     position: absolute;
     bottom: 10px;
     right: -12px;
-  }
-  .container-logo .box-logo .role-logo-text {
+}
+.container-logo .box-logo .role-logo-text {
     width: 100%;
     position: relative;
     display: flex;
     align-items: center;
     margin-top: -8px;
-    height: 40px;
-  }
-  .container-logo .box-logo .role-logo-text .block-logo {
+    height: 30px;
+}
+.container-logo .box-logo .role-logo-text .block-logo {
     width: 0%;
     height: inherit;
     background: #31aada;
@@ -96,10 +97,9 @@ main {
     animation: secBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
     animation-delay: 2s;
     display: flex;
-  }
+}
 #ul-text {
     letter-spacing: 5.8px;
-    margin-top: -20px;
 
   }
   .container-logo .box-logo .role-logo-text p {
@@ -109,9 +109,10 @@ main {
     font-weight: 300;
     color: #1b1b1b;
     font-size: 12px;
-    margin-top: -1px;
+    margin-top: 0;
     text-transform: uppercase;
     letter-spacing: 8.9px;
+    line-height: 15px;
   }
   
   @keyframes mainBlock {
