@@ -479,7 +479,7 @@ form:valid .fa-search{
     width: 100vw;
     height: 60vh;
     max-width: 1200px;
-    max-height: 320px;
+    max-height: 350px;
     border-radius: 15px;
     resize: both;
 }
@@ -493,16 +493,19 @@ form:valid .fa-search{
 .level-sections {
     display: flex;
     margin-top: 60px;
-    gap: 100px;
+    gap: 80px;
     width: 92%;
     height: 100%;
     text-align: center;
 }
+.level-sections h4, p {
+    margin-top: 20px;
+}
 #section-3 {
     padding: 10px;
     cursor: pointer;
-    border-radius: 25px 60px 25px 25px;
-    width: 33%;
+    border-radius: 20px 40px 20px 20px;
+    width: 40%;
     height: 100%;
     box-shadow: 1px 1px 10px rgb(226, 226, 226);
     transition: all 2s ease-in-out;
@@ -514,7 +517,7 @@ form:valid .fa-search{
 #section-4 img, 
 #section-5 img, 
 #section-6 img{
-    margin-top: 5px;
+    margin-top: 10px;
     background-size: cover;
     width: 60px;
 }
@@ -528,8 +531,8 @@ form:valid .fa-search{
 #section-4 {
     padding: 10px;
     cursor: pointer;
-    border-radius: 30px 60px 30px 30px;
-    width: 33%;
+    border-radius: 20px 40px 20px 20px;
+    width: 40%;
     height: 100%;
     box-shadow: 1px 1px 10px rgb(226, 226, 226);
     transition: all 2s ease-in-out;
@@ -540,8 +543,8 @@ form:valid .fa-search{
 #section-5 {
     padding: 10px;
     cursor: pointer;
-    border-radius: 30px 60px 30px 30px;
-    width: 33%;
+    border-radius: 20px 40px 20px 20px;
+    width: 40%;
     height: 100%;
     box-shadow: 1px 1px 10px rgb(226, 226, 226);
     transition: all 2s ease-in-out;
@@ -551,8 +554,8 @@ form:valid .fa-search{
 #section-6 {
     padding: 10px;
     cursor: pointer;
-    border-radius: 30px 60px 30px 30px;
-    width: 33%;
+    border-radius: 20px 40px 20px 20px;
+    width: 40%;
     height: 100%;
     box-shadow: 1px 1px 10px rgb(226, 226, 226);
     transition: all 2s ease-in-out;
@@ -847,8 +850,71 @@ figure.snip1084 {
 
 }
 .div-2 {
+    padding: 80px 30px 30px 30px;
+    text-align: center;
+    position: relative;
     width: 50%;
+    color: white;
     background: linear-gradient(to right, rgba(255,190,35,255), rgb(255, 145, 0));
+}
+.div-2 span {
+    font-size: 36px;
+    font-weight: 600;
+}
+.div-2 p {
+    font-weight: 200;
+}
+.shape-01 {
+    
+}
+.s-banner1,
+.s-banner2,
+.s-banner3,
+.s-banner4,
+.s-banner5,
+.s-banner6,
+.s-banner7,
+.s-banner8,
+.s-banner9 {
+    position: absolute;
+    font-size: 25px;
+    opacity: 0.2;
+}
+.s-banner1 {
+    left: 10px;
+    top: 20px;
+}
+.s-banner2 {
+    left: 50px;
+    top: 230px;
+}
+.s-banner3 {
+    left: 200px;
+    top: 40px;
+}
+.s-banner4 {
+    left: 500px;
+    top: 20px;
+}
+.s-banner5 {
+    left: 550px;
+    top: 100px;
+}
+.s-banner6 {
+    left: 400px;
+    top: 210px;
+}
+.s-banner7 {
+    left: 180px;
+    top: 200px;
+}
+.s-banner8 {
+    left: 300px;
+    top: 30px;
+}
+.s-banner9 {
+    left: 100px;
+    top: 60px;
 }
 
 @media (max-width: 1178px) {
