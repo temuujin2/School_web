@@ -638,7 +638,7 @@ form:valid .fa-search{
     margin-top: 30px;
     width: 100%;
     height: 500px;
-    border: 1.5px solid #f27334;
+    border: 1px solid #fec144;
     border-radius: 15px;
 }
 #main-3 {
@@ -863,9 +863,6 @@ figure.snip1084 {
 }
 .div-2 p {
     font-weight: 200;
-}
-.shape-01 {
-    
 }
 .s-banner1,
 .s-banner2,
@@ -1332,10 +1329,12 @@ textarea{
 }
 .content-1 span {
     font-size: 30px;
+    margin-top: 0;
 }
 .content-1 p {
     font-size: 14px;
     font-weight: 100;
+    margin-top: 0;
 }
 .content-1 input {
     width: 250px;
@@ -1375,13 +1374,21 @@ textarea{
     list-style: none;
 }
 .content-2 p,
-.content-3 p,
-.content-4 p {
+.content-3 p {
     margin-left: 40px;
 }
+.content-4 p {
+    margin-top: 45px;
+}
+.content-4 a {
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 13px;
+    color: rgb(197, 197, 197);
+    font-weight: 200;
+}
 .content-2 ul a,
-.content-3 ul a,
-.content-4 ul a {
+.content-3 ul a  {
     margin-left: 50px;
     text-decoration: none;
     color: rgb(197, 197, 197);
@@ -1415,6 +1422,7 @@ textarea{
     color: rgb(204, 204, 204);
     font-size: 12px;
     font-weight: 300;
+    margin-top: 0;
 }
 .copyright-inside-wrapp {
     display: flex;
@@ -1428,7 +1436,6 @@ textarea{
 }
 .social-wrap-2 a {
     display: flex;
-    margin-top: 18px;
     text-decoration: none;
     color: rgb(0, 0, 0);
 }
@@ -1442,7 +1449,7 @@ textarea{
 .social-wrap-2 i:hover {
     color: #ffc400;
     cursor: pointer;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 .fb-box,
 .insta-box,
@@ -1453,11 +1460,12 @@ textarea{
     position: absolute;
     text-align: center;
     padding: 4px;
-    top: -50px;
+    top: -30px;
     left: -35px;
     width: 80px;
     height: 20px;
     background: rgba(255, 255, 255, 0.1);
+    
 }
 .fa-facebook-square:hover .fb-box,
 .fa-instagram-square:hover .insta-box,

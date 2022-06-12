@@ -399,9 +399,7 @@ form:valid .fa-search{
 }
 .div-2 p {
     font-weight: 200;
-}
-.shape-01 {
-    
+    margin-top: 20px;
 }
 .s-banner1,
 .s-banner2,
@@ -1002,10 +1000,12 @@ textarea{
 }
 .content-1 span {
     font-size: 30px;
+    margin-top: 0;
 }
 .content-1 p {
     font-size: 14px;
     font-weight: 100;
+    margin-top: 0;
 }
 .content-1 input {
     width: 250px;
@@ -1045,13 +1045,22 @@ textarea{
     list-style: none;
 }
 .content-2 p,
-.content-3 p,
-.content-4 p {
+.content-3 p {
     margin-left: 40px;
+    margin-top: 20px;
+}
+.content-4 p {
+    margin-top: 45px;
+}
+.content-4 a {
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 13px;
+    color: rgb(197, 197, 197);
+    font-weight: 200;
 }
 .content-2 ul a,
-.content-3 ul a,
-.content-4 ul a {
+.content-3 ul a  {
     margin-left: 50px;
     text-decoration: none;
     color: rgb(197, 197, 197);
@@ -1092,13 +1101,50 @@ textarea{
     align-items: center;
     width: 1100px;
 }
-.social-wrap {
+.social-wrap-2 {
     display: flex;
-    gap: 15px;
+    gap: 20px;
+}
+.social-wrap-2 a {
+    display: flex;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
 }
 .inside-wrapp-1 {
     display: flex;
     gap: 15px;
+}
+.social-wrap-2 .fa-brands {
+    position: relative;
+}
+.social-wrap-2 i:hover {
+    color: #ffc400;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.fb-box,
+.insta-box,
+.git-box,
+.dis-box,
+.tube-box {
+    display: none;
+    position: absolute;
+    text-align: center;
+    padding: 4px;
+    top: -30px;
+    left: -35px;
+    width: 80px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    
+}
+.fa-facebook-square:hover .fb-box,
+.fa-instagram-square:hover .insta-box,
+.fa-github-square:hover .git-box,
+.fa-discord:hover .dis-box,
+.fa-youtube:hover .tube-box    {
+    transition: all 0.4s ease-in-out;
+    display: block;
 }
 
 
