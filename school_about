@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./school.css">
+</head>
+<body>
+    
+    <div class="shapes">
+        <div data-speed="-13" class="layer triangle1"></div>
+        <div data-speed="15" class="layer triangle2"></div>
+        <div data-speed="9" class="layer triangle3"></div>
+        <div data-speed="6" class="layer triangle4"></div>
+        <div data-speed="12" class="layer triangle5"></div>
+        <div data-speed="-9" class="layer triangle6"></div>
+        <div data-speed="15" class="layer triangle7"></div>
+        <div data-speed="-13" class="layer triangle8"></div>
+        <div data-speed="9" class="layer triangle9"></div>
+        <div data-speed="8" class="layer triangle10"></div>
+        <div data-speed="-8" class="layer triangle11"></div>
+        <div data-speed="9" class="layer triangle12"></div>
+        <div data-speed="-9" class="layer triangle13"></div>
+        <div data-speed="13" class="layer triangle14"></div>
+        <div data-speed="9" class="layer triangle15"></div>
+        <div data-speed="-14" class="layer triangle16"></div>
+        <div data-speed="11" class="layer triangle17"></div>
+        <div data-speed="-8" class="layer triangle18"></div>
+    </div>
+    <div class="container">
+        <div class="header">
+            <div class="animate five">
+                <span class="b">E</span><span class="b">D</span><span class="b">U</span>
+                <span>s</span><span>c</span><span>H</span><span>O</span><span>O</span><span>L</span>
+            </div>
+        </div>
+        <div class="tailbar">
+            <p>School website design for schools all around the world! We can create your school website design for you or you can use our school website builder to create a website for your school. Choose from one of our professionally designed school templates to get started. Try it for free now. No Credit Card Required!</p>
+        </div>
+        <div class="medeelel">
+            <div class="img">
+                <img width="500px" height="400px" src="https://content.app-sources.com/s/31480997394051551/uploads/Optimised/School-Website-Design-6412298-2094950.jpg" alt="">
+            </div>
+            <div class="txt">
+                <p class="box">
+                    <l>LET US CREATE YOUR SCHOOL WEBSITE DESIGN</l><br>
+                    <br>
+                    We understand being a teacher or part of the school staff may not allow for time to build your school website and that's why we offer a complete school website design solution.  We can design and build your school website.  We offer affordable prices based on the features you need for your school website.  
+                </p>
+            </div>
+        </div>
+        <div class="medeelel1">
+            <div class="img1">
+                <p class="box">
+                    <l>FREE SCHOOL WEBSITE DESIGN COURSE</l><br>
+                    <br>
+                    Our school website builder is super easy to use but we do understand that building a school website for the first time may seem daunting.  That's why we've created a free course to show you how to build a school website.  We cover everything from preparation, design, building to publishing your new school website.  This is the perfect companion for your school website building journey!
+                </p>
+            </div>
+            <div class="txt1">
+                <img width="500px" height="400px"  src="https://content.app-sources.com/s/423978633624746/uploads/Images/Free_School_Website_Design_Course_PNG-2885919.png" alt="">
+            </div>
+        </div>
+        <div class="medeelel">
+            <div class="img">
+                <img width="500px" height="400px"  src="https://content.app-sources.com/s/31480997394051551/thumbnails/640x480/Images/James_Town_school_website_design-2097654.png" alt="">
+            </div>
+            <div class="txt">
+                <p class="box">
+                    <l>SCHOOL WEBSITE DESIGN INSTANT QUOT</l><br>
+                    <br>
+                    Our school website builder is super easy to use but we do understand that building a school website for the first time may seem daunting.  That's why we've created a free course to show you how to build a school website.  We cover everything from preparation, design, building to publishing your new school website.  This is the perfect companion for your school website building journey!
+                </p>
+            </div>
+        </div>
+        <div class="medeelel1">
+            <div class="img1">
+                <p class="box">
+                    <l>FREE SCHOOL WEBSITE DESIGN COURSE</l><br>
+                    <br>
+                    Our school website builder is super easy to use but we do understand that building a school website for the first time may seem daunting.  That's why we've created a free course to show you how to build a school website.  We cover everything from preparation, design, building to publishing your new school website.  This is the perfect companion for your school website building journey!
+                </p>
+            </div>
+            <div class="txt1">
+                <img width="500px" height="400px"  src="https://content.app-sources.com/s/423978633624746/uploads/Images/Free_School_Website_Design_Course_PNG-2885919.png" alt="">
+            </div>
+        </div>
+        <div class="us">
+            <div class="img-con">
+                <figure>
+                    <div class="imagesContainer">
+                        <img width="1000px" height="600px" src='https://smapse.com/storage/2018/12/east-campus-aerial.jpg' alt=''>
+                        <img  width="1000px" height="600px"  class="fadeInClass" src='https://images2.boardingschoolreview.com/photo/1122x864/1000/593/img-academy-oqxuxY.jpg' alt=''>							  
+                        <div class="img-text">
+                            <div class="head">
+                                <p class="ab">QWERTYUIO</p>
+                                <p class="ab">-ASDFGHJ-</p>
+                                <p class="ab">-ZXCVBN-</p>
+                                <p class="ab">-HJKUIONM-</p>
+                            </div>
+                        </div>
+                    </div>
+                </figure>
+                <div class="about-us">
+                    <div class="box1">
+                        <div class="sh1">
+                            <div class="name">Захирал</div>
+                        </div>
+                        <div class="sh2">
+                            <div class="name">Багш</div>
+                        </div>
+                        <div class="sh5">
+                            <div class="name">Багш</div>
+                        </div>
+                        <div class="sh4">
+                            <div class="name">Багш</div>
+                        </div>
+                        <div class="sh6">
+                            <div class="name">Багш</div>
+                        </div>
+                        <div class="sh3">
+                            <div class="name">Багш</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-wrap">
+            <div class="footer-wrap-1">
+                <div class="content-1">
+                    <span>Мэдээлэл</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, corrupti.</p>
+                    <div class="email_input-wrapp">
+                        <input type="email" placeholder="Имэйл хаягаа бүртгүүлэх">
+                        <button><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="content-2">
+                    <p>Categories</p>
+                    <ul>
+
+                        <li><a href="">Нүүр</a></li>
+                        <li><a href="">Бидний тухай</a></li>
+                        <li><a href="">Суралцах үе шат</a></li>
+                        <li><a href="">Сургалт</a></li>
+                        <li><a href="">Автобусны чиглэл</a></li>
+                    </ul>
+                </div>
+                <div class="content-3">
+                    <p>Categories</p>
+                    <ul>
+
+                        <li><a href="">Нүүр</a></li>
+                        <li><a href="">Бидний тухай</a></li>
+                        <li><a href="">Суралцах үе шат</a></li>
+                        <li><a href="">Сургалт</a></li>
+                        <li><a href="">Автобусны чиглэл</a></li>
+                    </ul>
+                </div>
+                <div class="content-4">
+                    <p>Categories</p>
+                    <ul>
+
+                        <li><a href="">Нүүр</a></li>
+                        <li><a href="">Бидний тухай</a></li>
+                        <li><a href="">Суралцах үе шат</a></li>
+                        <li><a href="">Сургалт</a></li>
+                        <li><a href="">Автобусны чиглэл</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js.js"></script>
+</body>
+</html>
