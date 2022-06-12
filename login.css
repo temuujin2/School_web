@@ -130,11 +130,10 @@ body {
     margin-top: 5%;
     display: flex;
     justify-content: center;
+    position: relative;
     width: 800px;
     height: 500px;
-    background: gray;
     border-radius: 12px;
-    overflow: hidden;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2), -5px -5px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -148,6 +147,7 @@ body {
     align-items: center;
     flex-direction: column;
     background: white;
+    border-radius: 12px 0 0 12px;
 }
 
 .logo_container {
@@ -216,11 +216,14 @@ body {
 }
 
 h1 {
-    color: #fec144;
+    color: #f2a034;
 }
-
+.animation {
+    position: absolute;
+    top: 30px;
+}
 .text_box p {
-    margin-top: 20px;
+    margin-top: 160px;
     color: rgb(112, 112, 112);
     font-size: 13px;
 }
@@ -282,7 +285,7 @@ h1 {
     border: none;
     width: 120px;
     height: 30px;
-    background: #fec144;
+    background: linear-gradient(45deg, #fec144, #f27334);
     color: white;
     border-radius: 15px;
     transition: all .2s ease-in-out;
@@ -315,7 +318,7 @@ h1 {
 }
 
 .forgot_box p:hover {
-    color: #fec144;
+    color: #2880be;
 }
 
 
@@ -333,35 +336,43 @@ h1 {
     align-items: center;
     justify-content: center;
     width: 40%;
-    background: linear-gradient(45deg, #fec144, #f27334);
-    color: white;
-}
+    border-radius: 0 12px 12px 0;
+    /* background: linear-gradient(45deg, #fec144, #f27334); */
+    color: #2880be;
 
+}
+.login-animation {
+    position: absolute;
+    top: -102.7px;
+    right: -120px;
+}
 .text_line2 {
     width: 80px;
     height: 2px;
-    background: white;
+    background: #2880be;
 }
 
 #signUp {
     cursor: pointer;
-    color: white;
+    color: #2880be;
     border: none;
     padding: 5px 15px 25px 15px;
     width: 80px;
     height: 30px;
-    border: 1px solid white;
+    border: 1px solid #2880be;
     border-radius: 15px;
     background: none;
     transition: all .2s ease-in-out;
 }
 
 #signUp:hover {
-    background: white;
-    color: #fec144;
+    background: #2880be;
+    color: white;
     animation: pulsate 1s ease-in-out;
 }
-
+.login-animation {
+    position: absolute;
+}
 
 /* ==============right side END==================== */
 
@@ -460,7 +471,7 @@ hr {
 .signupbtn {
     cursor: pointer;
     color: white;
-    background: linear-gradient(45deg, #fec144, #f27334);;
+    background: linear-gradient(45deg, #fec144, #f27334);
     transition: all .2s ease-in-out;
 }
 
@@ -478,6 +489,22 @@ hr {
 
 @keyframes pulsate {
     0% {
-        box-shadow: 0 0 25px rgb(202, 255, 206), 0 0 50px rgb(112, 255, 155);
+        box-shadow: 0 0 25px rgb(202, 229, 255), 0 0 50px rgb(112, 191, 255);
     }
+}
+.footer {
+    position: absolute;
+    bottom: 7px;
+    left: 20px;
+    font-size: 12px;
+    font-weight: 300;
+    color: rgb(185, 185, 185);
+}
+.footer-2 {
+    position: absolute;
+    bottom: 7px;
+    right: 20px;
+    font-size: 11px;
+    font-weight: 300;
+    color: rgb(185, 185, 185);
 }
