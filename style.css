@@ -1033,7 +1033,6 @@ figure.snip1084 {
     height: 100%;
 
 }
-
 .enroll-btn {
     margin: auto;
     position: absolute;
@@ -1057,11 +1056,10 @@ figure.snip1084 {
 }
 /* ====================enroll form=================== */
 .enroll {
-    position: absolute;
+    /* position: absolute; */
     display: flex;
     justify-content: center;
-    top: 70px;
-    left: 80px;
+    margin-top: 30px;
     width: 50%;
     max-width: 600px;
     height: 500px;
@@ -1072,6 +1070,7 @@ figure.snip1084 {
 #progressbar     {
     display: flex;
     position: relative;
+    top: 0px;
 }
 .line-li {
     position: absolute;
@@ -1121,11 +1120,13 @@ fieldset{
 }
 #second, #third {
     margin-top: 30px;
+    text-align: center;
 }
 #first{
     display: block;
     margin-left: -60px;
     margin-top: 30px;
+    text-align: center;
 }
 #first h2{
     margin-left: 10px;
@@ -1258,20 +1259,42 @@ textarea{
     display:inline;
     color:#c1c5cc;
 }
-/* ================== alert box ======================= */
-
-/* ==================enroll form end================== */
 .enroll-2 {
-    position: absolute;
+    /* position: absolute; */
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 70px;
-    left: 700px;
+    margin-top: 30px;
+    margin-left: 20px;
     width: 50%;
     max-width: 600px;
     height: 500px;
     background: white;
+}
+/* #line_enroll-2 {
+    width: 90%;
+    height: 2px;
+    background: linear-gradient(45deg, #fec144, #f27334);
+} */
+.text_wrapp-enroll-2 a {
+    width: 96%;
+    background: linear-gradient(45deg, #fec144, #f27334);
+    padding: 0.5px;
+}
+.text_wrapp-enroll-2 {
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    width: 92%;
+    height: 92%;
+}
+.text_wrapp-enroll-2 h3 {
+    margin-top: 15px;
+} 
+.text_wrapp-enroll-2 p {
+    margin: 10px 0 20px 20px;
+    font-size: 14px;
+    font-weight: 300;
 }
 
 
@@ -1290,6 +1313,9 @@ textarea{
     color: #db0f00;
     cursor: pointer;
 }
+
+/* ==================enroll form end================== */
+
 
 
 /* =====================+Footer+============================ */

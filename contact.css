@@ -570,7 +570,6 @@ form:valid .fa-search{
     height: 100%;
 
 }
-
 .enroll-btn {
     margin: auto;
     position: absolute;
@@ -594,11 +593,10 @@ form:valid .fa-search{
 }
 /* ====================enroll form=================== */
 .enroll {
-    position: absolute;
+    /* position: absolute; */
     display: flex;
     justify-content: center;
-    top: 70px;
-    left: 80px;
+    margin-top: 30px;
     width: 50%;
     max-width: 600px;
     height: 500px;
@@ -609,6 +607,7 @@ form:valid .fa-search{
 #progressbar     {
     display: flex;
     position: relative;
+    top: 0px;
 }
 .line-li {
     position: absolute;
@@ -658,11 +657,13 @@ fieldset{
 }
 #second, #third {
     margin-top: 30px;
+    text-align: center;
 }
 #first{
     display: block;
     margin-left: -60px;
     margin-top: 30px;
+    text-align: center;
 }
 #first h2{
     margin-left: 10px;
@@ -795,16 +796,13 @@ textarea{
     display:inline;
     color:#c1c5cc;
 }
-/* ================== alert box ======================= */
-
-/* ==================enroll form end================== */
 .enroll-2 {
-    position: absolute;
+    /* position: absolute; */
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 70px;
-    left: 700px;
+    margin-top: 30px;
+    margin-left: 20px;
     width: 50%;
     max-width: 600px;
     height: 500px;
@@ -827,6 +825,8 @@ textarea{
     color: #db0f00;
     cursor: pointer;
 }
+
+/* ==================enroll form end================== */
 /* =====================+ Contact section +=================== */
 
 .contacts-wrapp {
