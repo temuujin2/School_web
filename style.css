@@ -1044,8 +1044,8 @@ figure.snip1084 {
     background: linear-gradient(45deg, #fec144, #f27334);
     color: white;
     text-align: center;
-    font-size: 14px;
-    font-weight: 300;
+    font-size: 13px;
+    font-weight: 400;
     border-radius: 15px;
     transform: translateY(0);
     transition: all .8s ease-in-out;
@@ -1286,7 +1286,8 @@ textarea{
     flex-direction: column;
     overflow: scroll;
     width: 92%;
-    height: 92%;
+    height: 88%;
+    padding: 0 15px 0 10px;
 }
 .text_wrapp-enroll-2 h3 {
     margin-top: 15px;
