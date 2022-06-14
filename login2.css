@@ -499,7 +499,7 @@ hr {
     left: 20px;
     font-size: 12px;
     font-weight: 300;
-    color: rgb(185, 185, 185);
+    color: rgb(185, 185, 185) #cfb89d #fff7ee;
 }
 .footer-2 {
     position: absolute;
