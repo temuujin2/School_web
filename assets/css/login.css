@@ -7,7 +7,6 @@
 }
 
 body {
-    cursor: progress;
     background: rgb(243, 243, 243);
     display: flex;
     justify-content: center;
@@ -131,11 +130,10 @@ body {
     margin-top: 5%;
     display: flex;
     justify-content: center;
+    position: relative;
     width: 800px;
     height: 500px;
-    background: gray;
     border-radius: 12px;
-    overflow: hidden;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2), -5px -5px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -149,6 +147,7 @@ body {
     align-items: center;
     flex-direction: column;
     background: white;
+    border-radius: 12px 0 0 12px;
 }
 
 .logo_container {
@@ -157,24 +156,31 @@ body {
 }
 
 .logo_container b {
-    color: rgb(14, 218, 65);
+    color: #e9d856;
+    margin-left: 2px;
+    font-size: 25px;
 }
 
 .logo_container p {
+    color: #2880be;
     position: absolute;
+    font-size: 20px;
+    font-weight: 600;
     left: 20px;
     top: 10px;
     overflow: hidden;
 }
 
 
-/* .logo_container span {
-    color: rgb(14, 218, 65);
-} */
+.logo_container span {
+    font-weight: 300;
+    font-size: 15px;
+    color: gray;
+}
 
 .logo_container p span.cursor {
     display: inline-block;
-    background-color: rgb(14, 218, 65);
+    background-color: rgb(223, 223, 223);
     margin-left: 0.1rem;
     width: 1.5px;
     animation: blink 1s infinite;
@@ -186,10 +192,10 @@ body {
 
 @keyframes blink {
     0% {
-        background-color: rgb(14, 218, 65);
+        background-color: rgb(223, 223, 223);
     }
     49% {
-        background-color: rgb(14, 218, 65);
+        background-color: rgb(223, 223, 223);
     }
     50% {
         background-color: transparent;
@@ -198,7 +204,7 @@ body {
         background-color: transparent;
     }
     100% {
-        background-color: rgb(14, 218, 65);
+        background-color: rgb(223, 223, 223);
     }
 }
 
@@ -210,11 +216,14 @@ body {
 }
 
 h1 {
-    color: rgb(14, 218, 65);
+    color: #f2a034;
 }
-
+.animation {
+    position: absolute;
+    top: 30px;
+}
 .text_box p {
-    margin-top: 20px;
+    margin-top: 160px;
     color: rgb(112, 112, 112);
     font-size: 13px;
 }
@@ -224,7 +233,7 @@ h1 {
     margin-bottom: 10px;
     width: 80px;
     height: 2px;
-    background: rgb(14, 218, 65);
+    background: #fec144;
 }
 
 .social button {
@@ -267,7 +276,7 @@ h1 {
 }
 
 .login_box input:hover {
-    border: 1px solid rgb(14, 218, 65);
+    border: 1px solid #fec144;
     transition: all 1.5s ease-out;
 }
 
@@ -276,15 +285,15 @@ h1 {
     border: none;
     width: 120px;
     height: 30px;
-    background: rgb(14, 218, 65);
+    background: linear-gradient(45deg, #fec144, #f27334);
     color: white;
     border-radius: 15px;
     transition: all .2s ease-in-out;
 }
 
 #signIn:hover {
-    color: rgb(14, 218, 65);
-    border: 1px solid rgb(14, 218, 65);
+    color: #f29034;
+    border: 1px solid #fec144;
     background: none;
 }
 
@@ -300,7 +309,7 @@ h1 {
 
 .forgot_box label:hover {
     cursor: pointer;
-    color: rgb(14, 218, 65);
+    color: #fec144;
 }
 
 .forgot_box p {
@@ -309,7 +318,7 @@ h1 {
 }
 
 .forgot_box p:hover {
-    color: rgb(14, 218, 65);
+    color: #2880be;
 }
 
 
@@ -327,35 +336,43 @@ h1 {
     align-items: center;
     justify-content: center;
     width: 40%;
-    background: linear-gradient(45deg, rgb(14, 218, 65), rgb(107, 206, 176));
-    color: white;
-}
+    border-radius: 0 12px 12px 0;
+    /* background: linear-gradient(45deg, #fec144, #f27334); */
+    color: #2880be;
 
+}
+.login-animation {
+    position: absolute;
+    top: -102.7px;
+    right: -120px;
+}
 .text_line2 {
     width: 80px;
     height: 2px;
-    background: white;
+    background: #2880be;
 }
 
 #signUp {
     cursor: pointer;
-    color: white;
+    color: #2880be;
     border: none;
     padding: 5px 15px 25px 15px;
     width: 80px;
     height: 30px;
-    border: 1px solid white;
+    border: 1px solid #2880be;
     border-radius: 15px;
     background: none;
     transition: all .2s ease-in-out;
 }
 
 #signUp:hover {
-    background: white;
-    color: rgb(14, 218, 65);
+    background: #2880be;
+    color: white;
     animation: pulsate 1s ease-in-out;
 }
-
+.login-animation {
+    position: absolute;
+}
 
 /* ==============right side END==================== */
 
@@ -370,7 +387,7 @@ h1 {
 }
 
 .container input:hover {
-    border: 1px solid rgb(14, 218, 65);
+    border: 1px solid #fec144;
     transition: all 1.5s ease-out;
 }
 
@@ -411,7 +428,7 @@ h1 {
 }
 
 hr {
-    border: 0.5px solid rgb(14, 218, 65);
+    border: 0.5px solid #fec144;
 }
 
 .close {
@@ -454,13 +471,13 @@ hr {
 .signupbtn {
     cursor: pointer;
     color: white;
-    background: rgb(14, 218, 65);
+    background: linear-gradient(45deg, #fec144, #f27334);
     transition: all .2s ease-in-out;
 }
 
 .signupbtn:hover {
-    border: 1px solid rgb(14, 218, 65);
-    color: rgb(14, 218, 65);
+    border: 1px solid #fec144;
+    color: #fec144;
     background: none;
 }
 
@@ -472,6 +489,22 @@ hr {
 
 @keyframes pulsate {
     0% {
-        box-shadow: 0 0 25px rgb(202, 255, 206), 0 0 50px rgb(112, 255, 155);
+        box-shadow: 0 0 25px rgb(202, 229, 255), 0 0 50px rgb(112, 191, 255);
     }
+}
+.footer {
+    position: absolute;
+    bottom: 7px;
+    left: 20px;
+    font-size: 12px;
+    font-weight: 300;
+    color: rgb(185, 185, 185);
+}
+.footer-2 {
+    position: absolute;
+    bottom: 7px;
+    right: 20px;
+    font-size: 11px;
+    font-weight: 300;
+    color: rgb(185, 185, 185);
 }

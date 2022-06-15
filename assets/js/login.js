@@ -23,7 +23,7 @@ function validateemail() {
 var modal = document.getElementById('id01');
 
 
-window.onclick = function(event) {
+window.onclick = function (event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
@@ -32,10 +32,10 @@ window.onclick = function(event) {
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
-const textArray = ["Цаг алдалгүй захиал", "Таны хайсан бүхэн эндээс", "Бусдаас хямд", "Чанартай барааг яг одоо захиал"];
-const typingDelay = 100;
+const textArray = ["School", "of", "Ulaanbaatar"];
+const typingDelay = 50;
 const erasingDelay = 50;
-const newTextDelay = 2000;
+const newTextDelay = 1300;
 let textArrayIndex = 0;
 let charIndex = 0;
 
@@ -65,25 +65,25 @@ function erase() {
     }
 }
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     if (textArray.length) setTimeout(type, newTextDelay + 250);
 });
 
 // ===================
 document.addEventListener("mouseover", parallax);
-function parallax(e){
+function parallax(e) {
     this.querySelectorAll(".layer").forEach(layer => {
         const speed = layer.getAttribute('data-speed')
 
-        const x = (window.innerWidth - e.pageX*speed)/1000
-        const y = (window.innerHeight - e.pageY*speed)/1000
+        const x = (window.innerWidth - e.pageX * speed) / 1000
+        const y = (window.innerHeight - e.pageY * speed) / 1000
 
         layer.style.transform = `translateX(${x}px) translateY(${y}px)`
     })
 }
 
 $("figure").mouseleave(
-    function() {
-      $(this).removeClass("hover");
+    function () {
+        $(this).removeClass("hover");
     }
-  );
+);
