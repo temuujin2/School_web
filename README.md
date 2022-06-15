@@ -65,13 +65,13 @@ Javascript, HTML, CSS, Figma.com, Mockup, Photoshop, After Effect, Firebase.goog
 
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
-| Logo big text | ![#266EB2](https://via.placeholder.com/10/266EB2?text=+) #266EB2 |
-| Logo small text | ![#505050](https://via.placeholder.com/10/505050?text=+) #505050 |
-| Logo dot | ![#E3D13E](https://via.placeholder.com/10/E3D13E?text=+) #E3D13E |
-| Button | ![#F8A62B](https://via.placeholder.com/10/F8A62B?text=+) #F8A62B |
-| Button | ![#EB6825](https://via.placeholder.com/10/EB6825?text=+) #EB6825 |
-| Text | ![#329BD3](https://via.placeholder.com/10/329BD3?text=+) #329BD3 |
-| Text | [![github](https://via.placeholder.com/10/329BD3?text=+)](https://github.com/temuujin2/) #329BD3 |
+| Logo big text | ![](https://via.placeholder.com/10/266EB2?text=+) #266EB2 |
+| Logo small text | ![](https://via.placeholder.com/10/505050?text=+) #505050 |
+| Logo dot | ![](https://via.placeholder.com/10/E3D13E?text=+) #E3D13E |
+| Button | ![](https://via.placeholder.com/10/F8A62B?text=+) #F8A62B |
+| Button | ![](https://via.placeholder.com/10/EB6825?text=+) #EB6825 |
+| Text | ![](https://via.placeholder.com/10/329BD3?text=+) #329BD3 |
+
 
 
 
