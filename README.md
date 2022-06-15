@@ -65,12 +65,12 @@ Javascript, HTML, CSS, Figma.com, Mockup, Photoshop, After Effect, Firebase.goog
 
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
-| Logo big text | ![](https://via.placeholder.com/10/266EB2?text=+) #266EB2 |
-| Logo small text | ![](https://via.placeholder.com/10/505050?text=+) #505050 |
-| Logo dot | ![](https://via.placeholder.com/10/E3D13E?text=+) #E3D13E |
-| Button | ![](https://via.placeholder.com/10/F8A62B?text=+) #F8A62B |
-| Button | ![](https://via.placeholder.com/10/EB6825?text=+) #EB6825 |
-| Text | ![](https://via.placeholder.com/10/329BD3?text=+) #329BD3 |
+| Logo big text | ![]([https://via.placeholder.com/10/266EB2?text=+](https://firebasestorage.googleapis.com/v0/b/chat-app-f5f1d.appspot.com/o/266EB2.png?alt=media&token=96f58523-c73a-420a-9100-678f10842307)) #266EB2 |
+| Logo small text | ![]([https://via.placeholder.com/10/505050?text=+](https://firebasestorage.googleapis.com/v0/b/chat-app-f5f1d.appspot.com/o/505050.png?alt=media&token=ff003789-0595-4d9a-a76d-befcf6633f04)) #505050 |
+| Logo dot | ![]([https://via.placeholder.com/10/E3D13E?text=+](https://firebasestorage.googleapis.com/v0/b/chat-app-f5f1d.appspot.com/o/E3D13E.png?alt=media&token=f44de030-060c-4ee7-9a26-510fc9edeabe)) #E3D13E |
+| Button | ![]([https://via.placeholder.com/10/F8A62B?text=+](https://firebasestorage.googleapis.com/v0/b/chat-app-f5f1d.appspot.com/o/F8A62B.png?alt=media&token=6e7b1752-9d0f-40c1-a66b-512a2ae49e81)) #F8A62B |
+| Button | ![]([https://via.placeholder.com/10/EB6825?text=+](https://firebasestorage.googleapis.com/v0/b/chat-app-f5f1d.appspot.com/o/EB6825.png?alt=media&token=0e3659d4-26a8-4caf-a247-9a9deb047f27)) #EB6825 |
+| Text | ![]([https://via.placeholder.com/10/329BD3?text=+](https://firebasestorage.googleapis.com/v0/b/chat-app-f5f1d.appspot.com/o/329BD3.png?alt=media&token=9165072a-49d2-4e48-afdc-74cd7737d31b)) #329BD3 |
 
 
 
