@@ -71,6 +71,7 @@ Javascript, HTML, CSS, Figma.com, Mockup, Photoshop, After Effect, Firebase.goog
 | Button | ![#F8A62B](https://via.placeholder.com/10/F8A62B?text=+) #F8A62B |
 | Button | ![#EB6825](https://via.placeholder.com/10/EB6825?text=+) #EB6825 |
 | Text | ![#329BD3](https://via.placeholder.com/10/329BD3?text=+) #329BD3 |
+| Text | [![github](https://via.placeholder.com/10/329BD3?text=+)](https://github.com/temuujin2/) #329BD3 |
 
 
 
