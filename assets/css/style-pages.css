@@ -3,8 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    
+    font-family: 'Poppins', sans-serif; 
 }
 
 body {
@@ -22,7 +21,7 @@ main {
     width: 95vw;
 
 }
-/* ================= LOGO ======================= */
+/* =================== LOGO start =================== */
 .container-logo {
     display: flex;
     justify-content: center;
@@ -64,6 +63,7 @@ main {
     display: flex;
     align-items: baseline;
     position: relative;
+    z-index: 5;
 }
 .container-logo .box-logo .title-logo h1 span {
     width: 0px;
@@ -105,6 +105,7 @@ main {
     animation: secBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
     animation-delay: 2s;
     display: flex;
+    z-index: 6;
 }
 #ul-text {
     letter-spacing: 5.8px;
@@ -121,6 +122,7 @@ main {
     text-transform: uppercase;
     letter-spacing: 8.9px;
     line-height: 15px;
+    z-index: 5;
 }
   
 @keyframes mainBlock {
@@ -226,7 +228,7 @@ main {
     }
   }
 /* ================= LOGO END =================== */
-
+/* ================= Top menu =================== */
 .top-menu {
     margin-top: 20px;
     display: flex;
@@ -293,7 +295,8 @@ li {
     gap: 30px;
 
 }
-/* ----------search box */
+/* =================== Top menu end ================= */
+/* =================== Search box =================== */
 .icon-menu form{
     position: relative;
     top: -23px;
@@ -339,7 +342,7 @@ li {
     color: #f27334;
     text-align: center;
     font-size: 19px;
-
+    z-index: 3;
 }
 form:hover,
 form:valid{
@@ -358,103 +361,15 @@ form:valid .fa-search{
 
 }
 
-/* ----------search box end */
-
-.fa-basket-shopping {
-    cursor: pointer;
-}
-
-
-
-/* ====================end================= */
-
-.section-11 {
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
-    width: 1200px;
-    height: 300px;
-    border-radius: 15px;
-    overflow: hidden;
-
-}
-.div-1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-
-}
-.div-2 {
-    padding: 80px 30px 30px 30px;
-    text-align: center;
-    position: relative;
-    width: 50%;
-    color: white;
-    background: linear-gradient(to right, rgba(255,190,35,255), rgb(255, 145, 0));
-}
-.div-2 span {
-    font-size: 36px;
-    font-weight: 600;
-}
-.div-2 p {
-    font-weight: 200;
-    margin-top: 20px;
-}
-.s-banner1,
-.s-banner2,
-.s-banner3,
-.s-banner4,
-.s-banner5,
-.s-banner6,
-.s-banner7,
-.s-banner8,
-.s-banner9 {
-    position: absolute;
-    font-size: 25px;
-    opacity: 0.2;
-}
-.s-banner1 {
-    left: 10px;
-    top: 20px;
-}
-.s-banner2 {
-    left: 50px;
-    top: 230px;
-}
-.s-banner3 {
-    left: 200px;
-    top: 40px;
-}
-.s-banner4 {
-    left: 500px;
-    top: 20px;
-}
-.s-banner5 {
-    left: 550px;
-    top: 100px;
-}
-.s-banner6 {
-    left: 400px;
-    top: 210px;
-}
-.s-banner7 {
-    left: 180px;
-    top: 200px;
-}
-.s-banner8 {
-    left: 300px;
-    top: 30px;
-}
-.s-banner9 {
-    left: 100px;
-    top: 60px;
-}
-
-@media (max-width: 1178px) {
+/* ============== search box end ==================== */
+/* =================== Responsive =================== */
+@media (max-width: 1150px) {
     .text-wrap-1 {
         margin-left: 0;
         
+    }
+    .menu ul {
+        display: none;
     }
     .dropdown-container {
         display: none;
@@ -462,26 +377,41 @@ form:valid .fa-search{
     .show {
         display: block;
     }
-}
-@media (max-width: 1040px) {
-    .menu ul {
-        display: none;
+    .box-logo #menu  {
+        display: block;
     }
 }
+@media (max-width: 1040px) {
+    
+}
 @media (max-width: 650px) {
+    
+    .icon-menu i {
+        display: none;
+    }
+    .icon-menu form input {
+        display: none;
+    }
     .text-wrap-1 {
         margin-left: 0;
     }
     .text-wrap-1 h1, h2 {
         font-size: 16px;
     }
+    /* .icon-menu form {
+        position: absolute;
+        top: 75px;
+        left: 40px;
+    } */
 }
+/* ================ Responsive end ================== */
+/* ============== Login dropdown icon =============== */
 
-/* -----------------------main banner end ----------------------*/ 
 .fa-circle-user {
     cursor: pointer;
     position: relative;
     display: block;
+    z-index: 3;
 }
 
 
@@ -547,9 +477,112 @@ form:valid .fa-search{
 .show {
     display: block;
 }
+/* =========== Login dropdown end =========== */
+/* ============= humburger menu ============= */
+#menu {
+  z-index: 2;
+    display: none;
+}
 
+#menu-bar {
+  width: 30px;
+  height: 10px;
+  margin: 30px 0 20px 180px;
+  cursor: pointer;
+  
+}
 
-/* ========================================== */
+.bar {
+  height: 2.5px;
+  width: 100%;
+  background-color: #ffc400;
+  display: block;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+#bar1 {
+  transform: translateY(-4px);
+}
+
+#bar3 {
+  transform: translateY(4px);
+}
+
+.nav {
+  transition: 0.3s ease;
+  display: none;
+  z-index: 5;
+}
+
+.nav ul {
+  padding: 30px 22px;
+  
+}
+
+.nav li {
+  list-style: none;
+  padding: 8px 0;
+}
+
+.nav li a {
+
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+  z-index: 5;
+}
+
+.nav li a:hover {
+  color: #2880be;
+}
+
+.menu-bg, #menu {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.menu-bg {
+  z-index: 1;
+  width: 0;
+  height: 0;
+  margin: 23px 0 0 142px;
+  background: #e9d958;
+  border-radius: 50%;
+  transition: 0.3s ease;
+  
+}
+
+.change {
+  display: block;
+}
+
+.change .bar {
+  background-color: white;
+}
+
+.change #bar1 {
+  transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar2 {
+  opacity: 0;
+}
+
+.change #bar3 {
+  transform: translateY(-2px) rotateZ(45deg);
+}
+
+.change-bg {
+  width: 460px;
+  height: 460px;
+  transform: translate(-78%,-30%);
+}
+/* ============== Hamburger menu end ================= */
+/* =================== Enroll form start ============= */
+
+/* --------------> Enroll button <---------- */
 .modal {
     display: none;
     position: fixed;
@@ -587,11 +620,14 @@ form:valid .fa-search{
     transform: translateY(0);
     transition: all .8s ease-in-out;
     cursor: pointer;
+    z-index: 2;
 }
 .enroll-btn:hover {
     transform: translateX(8px);
 }
-/* ====================enroll form=================== */
+/* ---------> enroll button end <----------------- */
+/* --------> Enroll form left side content <-------*/
+
 .enroll {
     /* position: absolute; */
     display: flex;
@@ -796,6 +832,8 @@ textarea{
     display:inline;
     color:#c1c5cc;
 }
+/* ----------> enroll left side end <-----------------*/
+/* -----------> enroll right side content <-----------*/
 .enroll-2 {
     /* position: absolute; */
     display: flex;
@@ -858,8 +896,8 @@ textarea{
     border: 1.5px solid #ffa835;
 }
 
-
-
+/* -----------> enroll right side end <-------------- */
+/* ------------> Enroll window close <--------------- */
 .close {
     position: absolute;
     right: 35px;
@@ -875,144 +913,94 @@ textarea{
     cursor: pointer;
 }
 
-/* ==================enroll form end================== */
-/* =====================+ Contact section +=================== */
+/* ================== Enroll form end================== */
+/* ================== Banner start ==================== */
 
-.contacts-wrapp {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    background-color: rgb(243, 243, 243);
-}
-.contact-in-wrapp {
-    width: 1100px;
-    display: flex;
-
-}
-.contact-input-wrapper {
-    display: flex;
-    flex-direction: column;
-    width: 1;
-    gap: 15px;
-    padding: 20px;
-    margin: 60px 0 40px 0;
-    background: rgb(255, 255, 255);
-    border-radius: 5px;
-}
-.contact-input-wrapper h5 {
-    font-size: 22px;
-    font-weight: 500;
-}
-.contact-input-wrapper p {
-    width: 620px;
-}
-.contact-input-wrapper input {
-    width: 300px;
-    height: 40px;
-    padding: 5px;
-    border: none;
-    border: 0.8px solid rgb(226, 226, 226);
-    border-radius: 5px;
-    outline-color: #fec144;
-}
-.top-input {
-    margin-right: 15px;
-}
-#big-text {
-    width: 605px;
-    height: 120px;
-    text-align: start;
-}
-.contact-input-wrapper a {
-    padding-top: 8px;
-    text-align: center;
-    text-decoration: none;
-    width: 120px;
-    height: 35px;
-    background: linear-gradient(45deg, #fec144, #f27334);
-    color: white;
-    border-radius: 5px;
-    font-size: 14px;
-    font-weight: 400;
-    transform: translateY(0);
-    transition: all .8s ease-in-out;
-}
-.contact-input-wrapper a:hover {
-    transform: translateX(10px);
-}
-.contact-wrapp-2 {
-    margin: 60px 0 0 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 22px;
-}
-.contact-wrapp-2>div {
-    padding: 15px 13px 0 15px;
-    width: 400px;
-    height: 90px;
-    background: white;
-    border-radius: 5px;
-}
-#school-text {
-    color: #2880be;
-    font-weight: 500;
-}
-.contact-wrapp-2 p {
-    font-size: 15px;
-    font-weight: 300;
-    color: gray;
-    padding-top: 20px;
-}
-.contact-wrapp-2 span {
-    font-size: 15px;
-    font-weight: 300;
-    color: gray;
-    padding-top: 17px;
-}
-.contact-shape {
-    margin-top: 5px;
-    margin-right: 20px;
-    float: left;
-    width: 50px;
-    height: 50px;
-    border: 3px solid #fff4d6;
-    border-radius: 50%;
-}
-.temuulel-n img,
-.phone-n img,
-.email-a img,
-.location img {
-    margin: 9.5px 0 0 9.5px;
-
-}
-.map-wrapp {
+.section-11 {
+    margin-top: 40px;
     display: flex;
     justify-content: center;
-}
-.map {
-    width: 1100px;
-    height: 450px;
-    text-align: center;
+    width: 1200px;
+    height: 300px;
     border-radius: 15px;
     overflow: hidden;
+
 }
-.contact-texts {
-    margin: 30px;
+.div-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+
+}
+.div-2 {
+    padding: 80px 30px 30px 30px;
     text-align: center;
+    position: relative;
+    width: 50%;
+    color: white;
+    background: linear-gradient(to right, rgba(255,190,35,255), rgb(255, 145, 0));
 }
-.contact-texts h1, .contact-texts span{
-    font-size: 30px;
-    font-weight: 500;
+.div-2 span {
+    font-size: 36px;
+    font-weight: 600;
 }
-.contact-texts p {
-    width: 1000px;
-    padding: 0 120px 0 120px;
-    font-size: 14px;
-    font-weight: 300;
+.div-2 p {
+    font-weight: 200;
+    margin-top: 20px;
 }
-/* =====================+ Footer +============================ */
+.s-banner1,
+.s-banner2,
+.s-banner3,
+.s-banner4,
+.s-banner5,
+.s-banner6,
+.s-banner7,
+.s-banner8,
+.s-banner9 {
+    position: absolute;
+    font-size: 25px;
+    opacity: 0.2;
+}
+.s-banner1 {
+    left: 10px;
+    top: 20px;
+}
+.s-banner2 {
+    left: 50px;
+    top: 230px;
+}
+.s-banner3 {
+    left: 200px;
+    top: 40px;
+}
+.s-banner4 {
+    left: 500px;
+    top: 20px;
+}
+.s-banner5 {
+    left: 550px;
+    top: 100px;
+}
+.s-banner6 {
+    left: 400px;
+    top: 210px;
+}
+.s-banner7 {
+    left: 180px;
+    top: 200px;
+}
+.s-banner8 {
+    left: 300px;
+    top: 30px;
+}
+.s-banner9 {
+    left: 100px;
+    top: 60px;
+}
+
+/* ==================== Banner end =================== */
+/* =====================+ Footer +==================== */
 
 .footer-wrap {
     display: flex;
@@ -1131,6 +1119,7 @@ textarea{
 .content-4 {
     list-style: none;
 }
+/* =========== Footer bottom side =============== */
 .copy-right {
     display: flex;
     justify-content: center;
@@ -1150,6 +1139,7 @@ textarea{
     align-items: center;
     width: 1100px;
 }
+/* --------> footer social icon <---------- */
 .social-wrap-2 {
     display: flex;
     gap: 20px;
@@ -1197,8 +1187,8 @@ textarea{
 }
 
 
-
-/* ================== background shapes ==================== */
+/* ================== Footer end ==================== */
+/* ============== background shapes ================= */
 
 .shapes {
     position: absolute;
@@ -1398,4 +1388,4 @@ textarea{
 
     
 }
-/* ========================================================= */
+/* ================================================== */

@@ -64,6 +64,7 @@ main {
     display: flex;
     align-items: baseline;
     position: relative;
+    z-index: 5;
 }
 .container-logo .box-logo .title-logo h1 span {
     width: 0px;
@@ -76,7 +77,7 @@ main {
     animation: popIn 0.8s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
     animation-delay: 2s;
     margin-left: 5px;
-
+    z-index: 6;
     position: absolute;
     bottom: 10px;
     right: -12px;
@@ -97,6 +98,7 @@ main {
     animation: secBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
     animation-delay: 2s;
     display: flex;
+    z-index: 6;
 }
 #ul-text {
     letter-spacing: 5.8px;
@@ -113,6 +115,7 @@ main {
     text-transform: uppercase;
     letter-spacing: 8.9px;
     line-height: 15px;
+    z-index: 5;
   }
   
   @keyframes mainBlock {
@@ -293,10 +296,11 @@ li {
     transition: all 1s;
     width: 39.5px;
     height: 39.5px;
-    background: white;
+
     box-sizing: border-box;
     border-radius: 25px;
     padding: 5px;
+    z-index: 3;
 }
 
 
@@ -914,10 +918,13 @@ figure.snip1084 {
     top: 60px;
 }
 
-@media (max-width: 1178px) {
+@media (max-width: 1150px) {
     .text-wrap-1 {
         margin-left: 0;
         
+    }
+    .menu ul {
+        display: none;
     }
     .dropdown-container {
         display: none;
@@ -925,19 +932,132 @@ figure.snip1084 {
     .show {
         display: block;
     }
-}
-@media (max-width: 1040px) {
-    .menu ul {
-        display: none;
+    .box-logo #menu  {
+        display: block;
     }
 }
+@media (max-width: 1040px) {
+    
+}
 @media (max-width: 650px) {
+    .icon-menu i {
+        display: none;
+    }
+    .icon-menu form input {
+        display: none;
+    }
     .text-wrap-1 {
         margin-left: 0;
     }
     .text-wrap-1 h1, h2 {
         font-size: 16px;
     }
+    /* .icon-menu form {
+        position: absolute;
+        top: 75px;
+        left: 40px;
+    } */
+}
+/* -------------humburger menu --------*/
+#menu {
+  z-index: 2;
+    display: none;
+}
+
+#menu-bar {
+  width: 30px;
+  height: 10px;
+  margin: 30px 0 20px 180px;
+  cursor: pointer;
+  
+}
+
+.bar {
+  height: 2.5px;
+  width: 100%;
+  background-color: #ffc400;
+  display: block;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+#bar1 {
+  transform: translateY(-4px);
+}
+
+#bar3 {
+  transform: translateY(4px);
+}
+
+.nav {
+  transition: 0.3s ease;
+  display: none;
+  z-index: 5;
+}
+
+.nav ul {
+  padding: 30px 22px;
+  
+}
+
+.nav li {
+  list-style: none;
+  padding: 8px 0;
+}
+
+.nav li a {
+
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+  z-index: 5;
+}
+
+.nav li a:hover {
+  color: #2880be;
+}
+
+.menu-bg, #menu {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.menu-bg {
+  z-index: 1;
+  width: 0;
+  height: 0;
+  margin: 23px 0 0 142px;
+  background: #e9d958;
+  border-radius: 50%;
+  transition: 0.3s ease;
+  
+}
+
+.change {
+  display: block;
+}
+
+.change .bar {
+  background-color: white;
+}
+
+.change #bar1 {
+  transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar2 {
+  opacity: 0;
+}
+
+.change #bar3 {
+  transform: translateY(-2px) rotateZ(45deg);
+}
+
+.change-bg {
+  width: 460px;
+  height: 460px;
+  transform: translate(-78%,-30%);
 }
 
 /* -----------------------main banner end ----------------------*/ 
@@ -945,6 +1065,7 @@ figure.snip1084 {
     cursor: pointer;
     position: relative;
     display: block;
+    z-index: 3;
 }
 
 
@@ -1012,7 +1133,7 @@ figure.snip1084 {
 }
 
 
-/* ========================================== */
+/* =================== Enroll heseg==================== */
 .modal {
     display: none;
     position: fixed;
@@ -1050,6 +1171,7 @@ figure.snip1084 {
     transform: translateY(0);
     transition: all .8s ease-in-out;
     cursor: pointer;
+    z-index: 2;
 }
 .enroll-btn:hover {
     transform: translateX(8px);
