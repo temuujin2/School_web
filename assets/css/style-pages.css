@@ -245,7 +245,9 @@ main {
     display: flex;
 
 }
-
+.menu a {
+    cursor: pointer;
+}
 .menu ul {
     list-style: none;
     z-index: 10;
@@ -295,6 +297,7 @@ main {
     background-color: #ffffff;
     border-radius: 5px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    
 }
 .dropdown-hover b {
     color: #ffa835;
@@ -305,22 +308,10 @@ main {
     font-size: 14px;
     color: rgb(54, 54, 54);
     display: block;
+    
 }
 .menu ul li:hover > ul, ul li ul:hover {
     display: block;
-}
-/* -----------dropdown menu hamburger ---- */
-.dropdown-hover2 {
-    margin-left: 30px;
-    display: none;
-    transition: transform .45s ease;
-}
-.dropdown-hover2 li {
-    display: block;
-}
-#menu ul li:hover > ul, ul li ul:hover {
-    display: block;
-    transition: transform .45s ease;
 }
 
 /* ----- menu underline hover end */
@@ -562,7 +553,7 @@ form:valid .fa-search{
 }
 
 .nav ul {
-  padding: 10px 0px;
+  padding: 25px 0px;
   
 }
 
@@ -572,7 +563,6 @@ form:valid .fa-search{
 }
 
 .nav li a {
-
   color: white;
   font-size: 15px;
   text-decoration: none;
@@ -684,8 +674,8 @@ form:valid .fa-search{
     background: linear-gradient(45deg, #fec144, #f27334);
     color: white;
     text-align: center;
-    font-size: 14px;
-    font-weight: 300;
+    font-size: 13px;
+    font-weight: 400;
     border-radius: 15px;
     transform: translateY(0);
     transition: all .8s ease-in-out;

@@ -221,6 +221,7 @@ main {
     }
   }
 /* ================= LOGO END =================== */
+/* ================= Top menu =================== */
 
 .top-menu {
     margin-top: 20px;
@@ -233,7 +234,7 @@ main {
 }
 
 .menu {
-    margin-left: -50px;
+    margin-left: -90px;
     margin-top: 23px;
     display: flex;
 
@@ -244,8 +245,9 @@ main {
     z-index: 10;
 }
 
-li {
+.menu li {
     float: left;
+    position: relative;
     margin-right: 60px;
     z-index: 3;
 }
@@ -272,6 +274,39 @@ li {
 .link:hover::after {
     transform: scaleX(1);
 }
+/* ----- dropdown menu ---------- */
+.dropdown-hover {
+    position: absolute;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 13px 0 0 10px;
+    padding: 5px 0 10px 20px;
+    z-index: 3;
+    display: none;
+    height: auto;
+    width: 190px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    
+}
+.dropdown-hover b {
+    color: #ffa835;
+}
+.dropdown-hover li {
+    margin-top: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(54, 54, 54);
+    display: block;
+    
+}
+.menu ul li:hover > ul, ul li ul:hover {
+    display: block;
+}
+
+/* ----- menu underline hover end */
 .icon-menu {
 
     margin-top: 17px;
@@ -286,8 +321,9 @@ li {
     display: flex;
     justify-content: flex-start;
     gap: 30px;
-
 }
+/* =================== Top menu end ================= */
+/* =================== Search box =================== */
 /* ----------search box */
 .icon-menu form{
     position: relative;
@@ -355,9 +391,45 @@ form:valid .fa-search{
 }
 
 /* ----------search box end */
-
-.fa-basket-shopping {
-    cursor: pointer;
+@media (max-width: 1150px) {
+    .text-wrap-1 {
+        margin-left: 0;
+        
+    }
+    .menu ul {
+        display: none;
+    }
+    .dropdown-container {
+        display: none;
+    }
+    .show {
+        display: block;
+    }
+    .box-logo #menu  {
+        display: block;
+    }
+}
+@media (max-width: 1040px) {
+    
+}
+@media (max-width: 650px) {
+    .icon-menu i {
+        display: none;
+    }
+    .icon-menu form input {
+        display: none;
+    }
+    .text-wrap-1 {
+        margin-left: 0;
+    }
+    .text-wrap-1 h1, h2 {
+        font-size: 16px;
+    }
+    /* .icon-menu form {
+        position: absolute;
+        top: 75px;
+        left: 40px;
+    } */
 }
 
 
@@ -918,46 +990,7 @@ figure.snip1084 {
     top: 60px;
 }
 
-@media (max-width: 1150px) {
-    .text-wrap-1 {
-        margin-left: 0;
-        
-    }
-    .menu ul {
-        display: none;
-    }
-    .dropdown-container {
-        display: none;
-    }
-    .show {
-        display: block;
-    }
-    .box-logo #menu  {
-        display: block;
-    }
-}
-@media (max-width: 1040px) {
-    
-}
-@media (max-width: 650px) {
-    .icon-menu i {
-        display: none;
-    }
-    .icon-menu form input {
-        display: none;
-    }
-    .text-wrap-1 {
-        margin-left: 0;
-    }
-    .text-wrap-1 h1, h2 {
-        font-size: 16px;
-    }
-    /* .icon-menu form {
-        position: absolute;
-        top: 75px;
-        left: 40px;
-    } */
-}
+
 /* -------------humburger menu --------*/
 #menu {
   z-index: 2;
@@ -996,13 +1029,13 @@ figure.snip1084 {
 }
 
 .nav ul {
-  padding: 30px 22px;
+  padding: 25px 0px;
   
 }
 
 .nav li {
   list-style: none;
-  padding: 8px 0;
+  padding: 3px 0;
 }
 
 .nav li a {
