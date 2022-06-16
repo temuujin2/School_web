@@ -240,7 +240,7 @@ main {
 }
 
 .menu {
-    margin-left: -50px;
+    margin-left: -90px;
     margin-top: 23px;
     display: flex;
 
@@ -251,12 +251,13 @@ main {
     z-index: 10;
 }
 
-li {
+.menu li {
     float: left;
+    position: relative;
     margin-right: 60px;
     z-index: 3;
 }
-
+/* -------- menu underline hover */
 .link{
     text-decoration: none;
     color: rgb(54, 54, 54);
@@ -279,6 +280,51 @@ li {
 .link:hover::after {
     transform: scaleX(1);
 }
+/* ----- dropdown menu ---------- */
+.dropdown-hover {
+    position: absolute;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 13px 0 0 10px;
+    padding: 5px 0 10px 20px;
+    z-index: 3;
+    display: none;
+    height: auto;
+    width: 190px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+.dropdown-hover b {
+    color: #ffa835;
+}
+.dropdown-hover li {
+    margin-top: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(54, 54, 54);
+    display: block;
+}
+.menu ul li:hover > ul, ul li ul:hover {
+    display: block;
+}
+/* -----------dropdown menu hamburger ---- */
+.dropdown-hover2 {
+    margin-left: 30px;
+    display: none;
+    transition: transform .45s ease;
+}
+.dropdown-hover2 li {
+    display: block;
+}
+#menu ul li:hover > ul, ul li ul:hover {
+    display: block;
+    transition: transform .45s ease;
+}
+
+/* ----- menu underline hover end */
+
 .icon-menu {
 
     margin-top: 17px;
@@ -516,13 +562,13 @@ form:valid .fa-search{
 }
 
 .nav ul {
-  padding: 30px 22px;
+  padding: 10px 0px;
   
 }
 
 .nav li {
   list-style: none;
-  padding: 8px 0;
+  padding: 3px 0;
 }
 
 .nav li a {
@@ -553,7 +599,30 @@ form:valid .fa-search{
   transition: 0.3s ease;
   
 }
-
+/* -------- menu underline hover */
+.link2{
+    text-decoration: none;
+    color: rgb(54, 54, 54);
+    font-size: 14px;
+    position: relative;
+}
+.link2::after {
+    content: '';
+    width: 100%;
+    height: 1.5px;
+    background: #2880be;
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .45s ease;
+}
+.link2:hover::after {
+    transform: scaleX(1);
+}
+/* ----- menu underline hover end */
 .change {
   display: block;
 }
@@ -579,6 +648,7 @@ form:valid .fa-search{
   height: 460px;
   transform: translate(-78%,-30%);
 }
+
 /* ============== Hamburger menu end ================= */
 /* =================== Enroll form start ============= */
 
