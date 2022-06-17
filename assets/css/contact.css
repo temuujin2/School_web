@@ -46,8 +46,15 @@
     border-radius: 5px;
     outline-color: #fec144;
 }
-.top-input {
-    margin-right: 15px;
+.top-inputs {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.bottom-inputs {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 #big-text {
     width: 605px;
@@ -121,23 +128,145 @@
     justify-content: center;
 }
 .map {
-    width: 1100px;
+    max-width: 1100px;
+    width: 100%;
     height: 450px;
     text-align: center;
     border-radius: 15px;
     overflow: hidden;
 }
 .contact-texts {
+    display: flex;
     margin: 30px;
+    justify-content: center;
     text-align: center;
+    flex-wrap: wrap;
 }
 .contact-texts h1, .contact-texts span{
     font-size: 30px;
     font-weight: 500;
 }
 .contact-texts p {
-    width: 1000px;
-    padding: 0 120px 0 120px;
+    max-width: 1000px;
     font-size: 14px;
     font-weight: 300;
+}
+
+@media (max-width: 1150px) {
+    .contact-in-wrapp {
+        flex-direction: column;
+        height: fit-content;
+        align-items: center;
+    }
+    .contact-wrapp-2 {
+        gap: 10px;
+        margin: -30px 0 10px 0;
+    }
+    .contact-texts {
+        width: 100%;
+    }
+}
+@media (max-width: 650px) {
+    .contact-in-wrapp {
+        width: 100vw;
+    }
+    .contact-in-wrapp {
+        width: 95vw;
+        flex-wrap: wrap;
+        padding-right: 10px;
+    }
+    .contact-input-wrapper {
+        width: 102%;
+    }
+    .contact-input-wrapper p {
+        width: 100%;
+    }
+    .top-inputs input{
+        flex-wrap: wrap;
+    }
+    .bottom-inputs {
+        flex-wrap: wrap;
+    }
+    .bottom-inputs {
+        flex-wrap: wrap;
+    }
+    #big-text {
+        width: 100%;
+    }
+    .contact-texts p {
+        font-size: 12px;
+    }
+}
+@media (max-width: 420px) {
+    .contact-in-wrapp {
+        width: 100vw;
+    }
+    .contact-input-wrapper {
+        width: 95%;
+        margin-left: 10px;
+        flex-wrap: wrap;
+        height: fit-content;
+    }
+    .top-inputs {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .bottom-inputs {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .contact-wrapp-2 {
+        align-items: center;
+    }
+    .contact-wrapp-2>div {
+        width: 95%;
+    }
+    
+}
+@media (max-width: 400px) {
+    .contact-in-wrapp {
+        width: 100vw;
+    }
+    .contact-input-wrapper {
+        width: 95%;
+        flex-wrap: wrap;
+        height: fit-content;
+    }
+    .contact-wrapp-2>div {
+        margin-left: 10px;
+    }
+}
+@media (max-width: 380px) {
+    .contact-in-wrapp {
+        width: 100vw;
+    }
+    .contact-input-wrapper {
+        width: 92%;
+        flex-wrap: wrap;
+        height: fit-content;
+    }
+    .top-inputs input {
+        width: 280px;
+    }
+    .bottom-inputs input {
+        width: 280px;
+    }
+
+}
+@media (max-width: 350px) {
+    .contact-in-wrapp {
+        width: 100vw;
+    }
+    .contact-input-wrapper {
+        width: 92%;
+        flex-wrap: wrap;
+        height: fit-content;
+    }
+    .top-inputs input {
+        width: 270px;
+    }
+    .bottom-inputs input {
+        width: 270px;
+    }
+
 }

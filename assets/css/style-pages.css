@@ -417,9 +417,20 @@ form:valid .fa-search{
     .box-logo #menu  {
         display: block;
     }
+    
 }
 @media (max-width: 1040px) {
-    
+    .div-1 {
+        width: 100%;
+    }
+    .div-2 p {
+        display: none;
+    }
+}
+@media (max-width: 820px) {
+    .div-2 {
+        display: none;
+    }
 }
 @media (max-width: 650px) {
     
@@ -440,6 +451,19 @@ form:valid .fa-search{
         top: 75px;
         left: 40px;
     } */
+}
+@media (max-width: 400px) {
+    .enroll-btn {
+        left: -105px;
+    }
+    .menu-bg, #menu {
+        margin-left: -20px;
+        z-index: 20;
+    }
+    #menu ul li a {
+        margin-left: 20px;
+    }
+
 }
 /* ================ Responsive end ================== */
 /* ============== Login dropdown icon =============== */
@@ -722,6 +746,7 @@ form:valid .fa-search{
     border-radius: 50%;
     background: rgb(207, 207, 207);
     color: white;
+    z-index: 2;
 }
 #active1 {
     background: #f27334;
@@ -980,8 +1005,10 @@ textarea{
     margin-top: 40px;
     display: flex;
     justify-content: center;
-    width: 1200px;
-    height: 300px;
+    max-width: 1200px;
+    width: 100%;
+    max-height: 300px;
+    height: 100%;
     border-radius: 15px;
     overflow: hidden;
 
@@ -990,7 +1017,8 @@ textarea{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    max-width: 600px;
+    border-radius: 15px;
 
 }
 .div-2 {

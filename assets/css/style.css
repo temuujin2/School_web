@@ -410,7 +410,17 @@ form:valid .fa-search{
     }
 }
 @media (max-width: 1040px) {
-    
+    .div-1 {
+        width: 100%;
+    }
+    .div-2 p {
+        display: none;
+    }
+}
+@media (max-width: 820px) {
+    .div-2 {
+        display: none;
+    }
 }
 @media (max-width: 650px) {
     .icon-menu i {
@@ -430,6 +440,19 @@ form:valid .fa-search{
         top: 75px;
         left: 40px;
     } */
+}
+@media (max-width: 400px) {
+    .enroll-btn {
+        left: -105px;
+    }
+    .menu-bg, #menu {
+        margin-left: -20px;
+        z-index: 20;
+    }
+    #menu ul li a {
+        margin-left: 20px;
+    }
+
 }
 
 
@@ -912,8 +935,10 @@ figure.snip1084 {
     margin-top: 40px;
     display: flex;
     justify-content: center;
-    width: 1200px;
-    height: 300px;
+    max-width: 1200px;
+    width: 100%;
+    max-height: 300px;
+    height: 100%;
     border-radius: 15px;
     overflow: hidden;
 
@@ -922,7 +947,8 @@ figure.snip1084 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    max-width: 600px;
+    border-radius: 15px;
 
 }
 .div-2 {
@@ -1258,6 +1284,7 @@ figure.snip1084 {
     width: 300px;
     height: 5px;
     background: rgb(207, 207, 207);
+    
 }
 #active1, #active2, #active3 {
     margin-left: 65px;
@@ -1268,6 +1295,7 @@ figure.snip1084 {
     border-radius: 50%;
     background: rgb(207, 207, 207);
     color: white;
+    z-index: 2;
 }
 #active1 {
     background: #f27334;
