@@ -399,73 +399,7 @@ form:valid .fa-search{
 }
 
 /* ============== search box end ==================== */
-/* =================== Responsive =================== */
-@media (max-width: 1150px) {
-    .text-wrap-1 {
-        margin-left: 0;
-        
-    }
-    .menu ul {
-        display: none;
-    }
-    .dropdown-container {
-        display: none;
-    }
-    .show {
-        display: block;
-    }
-    .box-logo #menu  {
-        display: block;
-    }
-    
-}
-@media (max-width: 1040px) {
-    .div-1 {
-        width: 100%;
-    }
-    .div-2 p {
-        display: none;
-    }
-}
-@media (max-width: 820px) {
-    .div-2 {
-        display: none;
-    }
-}
-@media (max-width: 650px) {
-    
-    .icon-menu i {
-        display: none;
-    }
-    .icon-menu form input {
-        display: none;
-    }
-    .text-wrap-1 {
-        margin-left: 0;
-    }
-    .text-wrap-1 h1, h2 {
-        font-size: 16px;
-    }
-    /* .icon-menu form {
-        position: absolute;
-        top: 75px;
-        left: 40px;
-    } */
-}
-@media (max-width: 400px) {
-    .enroll-btn {
-        left: -105px;
-    }
-    .menu-bg, #menu {
-        margin-left: -20px;
-        z-index: 20;
-    }
-    #menu ul li a {
-        margin-left: 20px;
-    }
 
-}
-/* ================ Responsive end ================== */
 /* ============== Login dropdown icon =============== */
 
 .fa-circle-user {
@@ -546,17 +480,17 @@ form:valid .fa-search{
 }
 
 #menu-bar {
-  width: 30px;
-  height: 10px;
+  width: 27px;
+  height: 15px;
   margin: 30px 0 20px 180px;
   cursor: pointer;
   
 }
 
 .bar {
-  height: 2.5px;
+  height: 3px;
   width: 100%;
-  background-color: #ffc400;
+  background-color: #ff9900;
   display: block;
   border-radius: 5px;
   transition: 0.3s ease;
@@ -675,16 +609,19 @@ form:valid .fa-search{
     top: 0;
     width: 100%;
     height: 100%;
+    overflow: scroll;
     background: rgba(0, 0, 0, 0.7);
 
 }
 .form-wrapp {
     display: flex;
+    flex-wrap: wrap;
     /* align-items: center; */
     justify-content: center;
     margin-top: 60px;
     width: 100%;
     height: 100%;
+    gap: 10px;
 
 }
 .enroll-btn {
@@ -717,9 +654,10 @@ form:valid .fa-search{
     display: flex;
     justify-content: center;
     margin-top: 30px;
-    width: 50%;
+    width: 100%;
     max-width: 600px;
-    height: 500px;
+    max-height: 500px;
+    height: 100%;
     background: white;
     text-align: center;
     
@@ -925,10 +863,10 @@ textarea{
     justify-content: center;
     align-items: center;
     margin-top: 30px;
-    margin-left: 20px;
-    width: 50%;
+    width: 100%;
     max-width: 600px;
-    height: 500px;
+    max-height: 500px;
+    height: 100%;
     background: white;
 }
 /* #line_enroll-2 {
@@ -1175,7 +1113,7 @@ textarea{
     margin-top: 20px;
 }
 .content-4 p {
-    margin-top: 45px;
+    margin-top: 20px;
 }
 .content-4 a {
     margin-left: 10px;
@@ -1220,12 +1158,14 @@ textarea{
     color: rgb(204, 204, 204);
     font-size: 12px;
     font-weight: 300;
+    margin-top: 0;
 }
 .copyright-inside-wrapp {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 1100px;
+    flex-wrap: wrap;
 }
 /* --------> footer social icon <---------- */
 .social-wrap-2 {
@@ -1477,3 +1417,89 @@ textarea{
     
 }
 /* ================================================== */
+/* =================== Responsive =================== */
+@media (max-width: 1150px) {
+    .text-wrap-1 {
+        margin-left: 0;
+        
+    }
+    .menu ul {
+        display: none;
+    }
+    .dropdown-container {
+        display: none;
+    }
+    .show {
+        display: block;
+    }
+    .box-logo #menu  {
+        display: block;
+    }
+    .copyright-inside-wrapp {
+        padding: 0 10px 0 10px;
+    } 
+    
+}
+@media (max-width: 1040px) {
+    .div-1 {
+        width: 100%;
+    }
+    .div-2 p {
+        display: none;
+    }
+}
+@media (max-width: 820px) {
+    .div-2 {
+        display: none;
+    }
+}
+@media (max-width: 650px) {
+    
+    .icon-menu i {
+        display: none;
+    }
+    .icon-menu form input {
+        display: none;
+    }
+    .text-wrap-1 {
+        margin-left: 0;
+    }
+    .text-wrap-1 h1, h2 {
+        font-size: 16px;
+    }
+    /* .icon-menu form {
+        position: absolute;
+        top: 75px;
+        left: 40px;
+    } */
+}
+@media (max-width: 400px) {
+    .bar {
+        margin-left: -20px;
+    }
+    .enroll-btn {
+        left: -105px;
+    }
+    #first {
+        margin-left: -48px;
+    }
+    #first .text_field {
+        width: 300px;
+    }
+    .options {
+        width: 300px;
+    }
+    #second .text_field {
+        width: 300px;
+        margin-left: -13px;
+    }
+    .button-wrapp-np {
+        margin-left: -13px;
+    }
+    #third .text_field {
+        width: 300px;
+        margin-left: -13px;
+    }
+
+}
+/* ================ Responsive end ================== */
