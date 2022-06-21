@@ -132,6 +132,7 @@
     resize: both;
 }
 #main-1 h1 {
+    font-size: 22px;
     font-weight: 500;
 }
 #main-1 span {
@@ -262,6 +263,7 @@
     display: flex;
 }
 .section-7 h1 {
+    font-size: 20px;
     font-weight: 500;
 }
 .section-7 span {
@@ -289,6 +291,8 @@
     border: 1px solid #fec144;
     border-radius: 15px;
 }
+
+/* ================= Surguuliin vy shatuud ================ */
 #main-3 {
     display: flex;
     flex-direction: column;
@@ -301,6 +305,7 @@
     
 }
 #main-3 h1 {
+    font-size: 22px;
     font-weight: 500;
 }
 #main-3 span {
@@ -310,12 +315,12 @@
 .wrapper-3 {
     margin-top: 40px;
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    width: 92%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 54px;
+    width: 100%;
     max-width: 1100px;
-    height: 45vh;
-    resize: both;
+    height: auto;
 }
 /* .section-01 {
     display: flex;
@@ -342,9 +347,9 @@ figure.snip1084 {
     color: #fff;
     position: relative;
     overflow: hidden;
-    min-width: 240px;
-    max-width: 380px;
-    max-height: 320px;
+    min-width: 100px;
+    max-width: 230px;
+    max-height: 250px;
     width: 100%;
     background: #000000;
     text-align: center;

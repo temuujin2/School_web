@@ -109,4 +109,10 @@ function menuOnClick() {
     document.getElementById("menu-bg").classList.toggle("change-bg");
 }
 
+// ==================== Bus video play ==================
+
+document.querySelector(".videoplay2").addEventListener("click", function () {
+    this.play()
+});
+
 
