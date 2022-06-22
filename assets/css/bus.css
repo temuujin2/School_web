@@ -6,6 +6,7 @@
     font-family: 'Poppins', sans-serif; 
 }
 .main-1 {
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -160,6 +161,10 @@
         width: 26%;
         top: 30%;
     }
+    .real-time-map {
+        align-items: center;
+        flex-direction: column;
+    }
 }
 @media (max-width: 650px) {
     .text-1, .text-2, .text-3,
@@ -232,8 +237,9 @@
     grid-gap: 5px;
     margin-top: 20px;
     width: 100%;
-    max-height: 250px;
+    max-height: 350px;
     height: auto;
+    /* background-color: #2880be; */
 }
 .medeelel-2-wrap p {
     font-size: 13px;
@@ -260,9 +266,39 @@
     font-weight: 400;
 }
 /* ------------- top contents end -------------------- */
-/* ------------- Real map start ---------------------- */
-.real-maps {
+/* ------------- middle content start ---------------- */
+.medeelel-section-2 {
+    display: flex;
+    justify-content: center;
     margin-top: 80px;
+    border: 0.5px solid #303030;
+    border-radius: 15px;
+    overflow: hidden;
+    max-width: 1100px;
+    width: 100%;
+}
+.in-section-1 {
+    width: 100%;
+    max-width: 780px;
+    height: 350px;
+    background: #303030;
+}
+.bus-top-2 {
+    
+}
+/* ------------- middle content end ------------------ */
+/* ------------- Real map start ---------------------- */
+.text-real-map h1 {
+    margin-top: 80px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+.text-real-map span {
+    color: #2880be;
+}
+.real-maps {
+    margin-top: 30px;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -278,22 +314,31 @@
 }
 .real-map-1, .real-map-2 {
     padding: 15px;
-    width: 540px;
-    height: 400px;
-    background: #d4d4d4;
+    max-width: 540px;
+    width: 100%;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 }
 .map-box-1 {
     width: 100%;
-    height: 80%;
-    background-color: #2880be;
+    height: auto;
     overflow: hidden;
+    
 }
 .map-box-1 video {
+    width: 100%;
     height: 100%;
+    border-radius: 10px;
 }
 .text-box-1 {
     display: flex;
     margin-top: 15px;
+    text-align: center;
+    background: #c4c4c4;
+    border-radius: 10px;
+    color: white;
+    padding: 5px 10px;
 }
 
 
@@ -322,8 +367,8 @@
     margin-top: 40px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-evenly;
+    gap: 36px;
     width: 92%;
     max-width: 1100px;
     height: auto;

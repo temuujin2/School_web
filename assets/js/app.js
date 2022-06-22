@@ -111,8 +111,13 @@ function menuOnClick() {
 
 // ==================== Bus video play ==================
 
-document.querySelector(".videoplay2").addEventListener("click", function () {
-    this.play()
-});
+// var vid = document.getElementsByClassName("mvideoplay1");
+
+// function playVid() {
+//     vid.play();
+// }
+// document.querySelector(".videoplay1").addEventListener("click", function () {
+//     this.play()
+// });
 
 
