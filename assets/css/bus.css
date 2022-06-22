@@ -33,6 +33,7 @@
     position: absolute;
     padding: 0 5px;
     background-color: rgb(255, 187, 0);
+    color: white;
     height: auto;
     font-size: medium;
     border-radius: 5px;
@@ -49,6 +50,7 @@
     top: 1%;
     opacity: 1;
     animation: text1 9s ease;
+    background: #ee3840;
 }
 .text-3 {
     left: 4%;
@@ -67,16 +69,18 @@
     top: 55%;
     opacity: 1;
     animation: text1 10s ease;
+    background: #ee3840;
 }
 .text-6 {
     right: 10%;
     top: 37%;
     opacity: 1;
     animation: text1 10s ease;
+    background: #ee3840;
 }
 .text-7 {
     width: 20%;
-    
+    background: #38b4ee;
     right: 42%;
     top: 36%;
     opacity: 1;
@@ -283,9 +287,6 @@
     height: 350px;
     background: #dddddd;
 }
-.bus-top-2 {
-    
-}
 /* ------------- middle content end ------------------ */
 /* ------------- Real map start ---------------------- */
 .text-real-map h1 {
@@ -334,20 +335,21 @@
     width: 100%;
     height: 100%;
     border-radius: 10px 10px 0 0;
+    border: 0.5px solid #f7f7f7;
 }
 .text-box-1 {
     display: flex;
     text-align: center;
-    background: #303030;
+    background: #f7f7f7;
     border-radius: 0 0 10px 10px;
-    color: white;
+    color: #303030;
     padding: 5px 10px;
     font-weight: 200;
 }
 .text-box-2 {
     display: flex;
     text-align: center;
-    background: #303030;
+    background: #525252;
     border-radius: 0 0 10px 10px;
     color: white;
     padding: 5px 10px;
@@ -407,7 +409,7 @@ figure.snip1084 {
     transition: all 0.3s ease-out;
   }
   figure.snip1084 img {
-    opacity: 1;
+    opacity: 0.7;
     height: 100%;
 
   }
@@ -477,20 +479,10 @@ figure.snip1084 {
     z-index: 1;
   }
   
-  figure.snip1084.blue {
-    background: #0a212f;
-  }
-  
-  figure.snip1084.red {
-    background: #36100c;
-  }
-  
   figure.snip1084.yellow {
     background: #ffc400;
   }
-  figure.snip1084.green {
-    background: #66b400;
-  }
+ 
   
   figure.snip1084:hover img,
   figure.snip1084.hover img {
