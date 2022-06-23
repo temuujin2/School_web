@@ -114,6 +114,7 @@ main {
 
 }
 .container-logo .box-logo .role-logo-text p {
+    -webkit-animation: secFadeIn 2s forwards;
     animation: secFadeIn 2s forwards;
     animation-delay: 3.2s;
     opacity: 0;
@@ -222,6 +223,7 @@ main {
     }
     50% {
       opacity: 1;
+      -webkit-transform: scale(1.3) rotate(-2deg);
       transform: scale(1.3) rotate(-2deg);
     }
     100% {
