@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <title>Students login page</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/feathericon.min.css">
+    <link rel="stylesheet" href="assets/plugins/morris/morris.css">
+    <link rel="stylesheet" href="assets/plugins/datatables/datatables.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="main-wrapper">
+
+        <div class="header">
+
+            <div class="header-left">
+                <div class="container-logo">
+                    <h1>TEMUULEL<b>•</b></h1>
+
+                    <span>SCHOOL OF</span>
+                    <p>ULAANBAATAR</p>
+                </div>
+            </div>
+
+            <a href="javascript:void(0);" id="toggle_btn">
+                <i class="fe fe-text-align-left"></i>
+            </a>
+            <div class="top-nav-search">
+                <form>
+                    <input type="text" class="form-control" placeholder="Search here">
+                    <button class="btn" type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+
+            <a class="mobile_btn" id="mobile_btn">
+                <i class="fa fa-bars"></i>
+            </a>
+
+
+            <ul class="nav user-menu">
+
+                <li class="nav-item dropdown noti-dropdown">
+                    <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
+                        <i class="fa fa-bell"></i> <span class="badge badge-pill">3</span>
+                    </a>
+                    <div class="dropdown-menu notifications">
+                        <div class="topnav-dropdown-header">
+                            <span class="notification-title">Мэдээллийн шинэчлэлт</span>
+                            <a href="javascript:void(0)" class="clear-noti"> Бүгдийг устгах </a>
+                        </div>
+                        <div class="noti-content">
+                            <ul class="notification-list">
+                                <li class="notification-message">
+                                    <a href="#">
+                                        <div class="media d-flex">
+                                            <span class="avatar avatar-sm flex-shrink-0">
+                                                <img class="avatar-img rounded-circle" alt="User Image"
+                                                    src="assets/img/profiles/avatar-02.jpg">
+                                            </span>
+                                            <div class="media-body flex-grow-1">
+                                                <p class="noti-details"><span class="noti-title">Болд багш</span>
+                                                    шалгалтын дүн <span class="noti-title">нэмж орууллаа</span></p>
+                                                <p class="noti-time"><span class="notification-time">4 минутын
+                                                        өмнө</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="#">
+                                        <div class="media d-flex">
+                                            <span class="avatar avatar-sm flex-shrink-0">
+                                                <img class="avatar-img rounded-circle" alt="User Image"
+                                                    src="assets/img/profiles/avatar-11.jpg">
+                                            </span>
+                                            <div class="media-body flex-grow-1">
+                                                <p class="noti-details"><span class="noti-title">Цэцэгээ багш</span>
+                                                    хичээлийн ирц <span class="noti-title">нэмж орууллаа</span></p>
+                                                <p class="noti-time"><span class="notification-time">6 минутын
+                                                        өмнө</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="#">
+                                        <div class="media d-flex">
+                                            <span class="avatar avatar-sm flex-shrink-0">
+                                                <img class="avatar-img rounded-circle" alt="User Image"
+                                                    src="assets/img/profiles/avatar-17.jpg">
+                                            </span>
+                                            <div class="media-body flex-grow-1">
+                                                <p class="noti-details"><span class="noti-title">Эрдэнэ багш</span>
+                                                    Биеийн тамирын зөвлөмж <span class="noti-title">нэмж орууллаа</span>
+                                                </p>
+                                                <p class="noti-time"><span class="notification-time">8 минутын
+                                                        өмнө</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="#">
+                                        <div class="media d-flex">
+                                            <span class="avatar avatar-sm flex-shrink-0">
+                                                <img class="avatar-img rounded-circle" alt="User Image"
+                                                    src="assets/img/profiles/avatar-13.jpg">
+                                            </span>
+                                            <div class="media-body flex-grow-1">
+                                                <p class="noti-details"><span class="noti-title">
+                                                        Сургалтын алба</span> хичээлийн төлөвлөгөө <span
+                                                        class="noti-title">нэмж
+                                                        орууллаа</span></p>
+                                                <p class="noti-time"><span class="notification-time">12 минутын
+                                                        өмнө</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="topnav-dropdown-footer">
+                            <a href="#">Нийт мэдээллийг харах</a>
+                        </div>
+                    </div>
+                </li>
+
+
+                <li class="nav-item dropdown has-arrow">
+                    <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
+                        <span class="user-img"><img class="rounded-circle" src="assets/img/profiles/avatar-01.jpg"
+                                width="31" alt="Seema Sisty"></span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <div class="user-header">
+                            <div class="avatar avatar-sm">
+                                <img src="assets/img/profiles/avatar-01.jpg" alt="User Image"
+                                    class="avatar-img rounded-circle">
+                            </div>
+                            <div class="user-text">
+                                <h6>Э. Тэмүүлэл</h6>
+                                <h6>6а анги</h6>
+                            </div>
+                        </div>
+                        <a class="dropdown-item" href="general.html">Миний мэдээлэл</a>
+                        <a class="dropdown-item" href="general.html">Тохиргоо</a>
+                        <a class="dropdown-item" href="login.html">Гарах</a>
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-inner slimscroll">
+                <div id="sidebar-menu" class="sidebar-menu">
+                    <ul>
+                        <li class="menu-title">
+                        </li>
+                        <li>
+                            <a href="index.html"><i class="fe fe-home"></i> <span>Нүүр</span></a>
+                        </li>
+                        <li class="submenu">
+                            <a href="#"><i class="fe fe-users"></i> <span> Анги </span> <span
+                                    class="menu-arrow"></span></a>
+                            <ul style="display: none;">
+                                <li><a href="teachers.html"> Багш нар </a></li>
+                                <li><a href="students.html"> Ангийн хүүхдүүд </a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu">
+                            <a href="#"><i class="fe fe-gear"></i> <span> Хувийн мэдээлэл</span> <span
+                                    class="menu-arrow"></span></a>
+                            <ul style="display: none;">
+                                <li><a href="general.html">Миний мэдээлэл</a></li>
+                                <li><a href="mydata.html">Миний сан </a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="food.html"><i class="fe fe-file"></i> <span>Үдийн хоол</span></a>
+                        </li>
+                        <li>
+                            <a href="vector-maps.html"><i class="fe fe-map"></i> <span>Автобусны чиглэл</span></a>
+                        </li>
+                        <li>
+                            <a href="tuluvluguu.html"><i class="fe fe-vector"></i> <span>Сургалтын төлөвлөгөө</span></a>
+                        </li>
+                        <li class="submenu">
+                            <a href="#"><i class="fe fe-layout"></i> <span> Сургалт<span
+                                        class="menu-arrow"></span></span></a>
+                            <ul style="display: none;">
+                                <li><a href="durem.html">Дүрэм журам</a></li>
+                                <li><a href="tulbur.html">Төлбөрийн мэдээлэл</a></li>
+                                <li><a href="sudalgaa.html">Судалгаа</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu">
+                            <a href="#"><i class="fe fe-table"></i> <span> Хичээл <span
+                                        class="menu-arrow"></span></span></a>
+                            <ul style="display: none;">
+                                <li><a href="hicheel-songolt.html">Хичээл сонголт </a></li>
+                                <li><a href="huviar.html" class="active">Хичээлийн хувиар </a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="page-wrapper">
+            <div class="content container-fluid">
+
+                <div class="page-header">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h3 class="page-title">Хичээлийн хувиар</h3>
+                            <ul class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">Нүүр</a></li>
+                                <li class="breadcrumb-item active">Хичээлийн хувиар</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="card">
+                            <div class="card-header">
+
+                                <thead>
+                                    <tr>
+                                        <th>2022 оны хичээлийн хувиар</th>
+                                    </tr>
+                                </thead>
+                            </div>
+
+                            <div class="card-body">
+                                <div id="calendar-wrap">
+                                    <header>
+                                        <h1>6-а анги</h1>
+                                    </header>
+                                    <div class="lessons-wrap-top">
+                                        <div class="lesson-box a1">Монгол хэл</div>
+                                        <div class="lesson-box a2">Математик</div>
+                                        <div class="lesson-box a3">Иргэний боловсрол</div>
+                                        <div class="lesson-box a4">Түүх</div>
+                                        <div class="lesson-box a5">Хүн байгаль</div>
+                                        <div class="lesson-box a6">Хөгжим</div>
+                                        <div class="lesson-box a7">Хүн нийгэм</div>
+                                        <div class="lesson-box a8">Биеийн тамир</div>
+                                        <div class="lesson-box a9">Сонгон хичээл</div>
+                                        <div class="lesson-box a10">Гадаад хэл</div>
+                                    </div>
+                                    <div id="calendar">
+                                        <ul class="weekdays">
+                                            <span>ДАВАА</span>
+                                            <li>Даваа</li>
+                                            <li>Мягмар</li>
+                                            <li>Лхагва</li>
+                                            <li>Пүрэв</li>
+                                            <li>Баасан</li>
+
+                                        </ul>
+
+                                        <!-- egnee 1 -->
+
+                                        <ul class="days">
+                                            <li class="day">
+                                                <div class="date">8:30 - 9:10</div>
+                                                <div class="event a1">
+                                                    <div class="event-desc">
+                                                        Монгол хэл: Хичээл орох өрөө #301
+                                                    </div>
+                                                    <div class="event-time">
+                                                        Багш: С.Цэцэгээ
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="day other-month">
+                                                <div class="date">8:30 - 9:10</div>
+                                                <div class="event a1">
+                                                    <div class="event-desc">
+                                                        Монгол хэл: Хичээл орох өрөө #301
+                                                    </div>
+                                                    <div class="event-time">
+                                                        Багш: С.Цэцэгээ
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li class="day other-month">
+                                                <div class="date">8:30 - 9:10</div>
+                                                <div class="event a1">
+                                                    <div class="event-desc">
+                                                        Монгол хэл: Хичээл орох өрөө #301
+                                                    </div>
+                                                    <div class="event-time">
+                                                        Багш: С.Цэцэгээ
+                                                    </div>
+                                                </div>
+                                            </li>
+
+
+
+                                            <li class="day other-month">
+                                                <div class="date">8:30 - 9:10</div>
+                                                <div class="event a3">
+                                                    <div class="event-desc">
+                                                        Иргэний боловсрол: Хичээл орох өрөө #305
+                                                    </div>
+                                                    <div class="event-time">
+                                                        Багш: А.Хишигээ
+                                                    </div>
+                                                </div>
+
+                                            </li>
+                                            <li class="day other-month">
+                                                <div class="date">8:30 - 9:10</div>
+                                                <div class="event a5">
+                                                    <div class="event-desc">
+                                                        Хүн байгаль: Хичээл орох өрөө #208
+                                                    </div>
+                                                    <div class="event-time">
+                                                        Багш: Б.Бат
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+
+                                        <!-- egnee 2 -->
+
+                                        <ul class="days">
+                                            <li class="day">
+                                                <div class="date">9:15 - 9:55</div>
+                                                <div class="event a2">
+                                                    <div class="event-desc">
+                                                        Математик: Хичээл орох өрөө #302
+                                                    </div>
+                                                    <div class="event-time">
+                                                        Багш: Д.Болд
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="day other-month">
+                                                <div class="date">9:15 - 9:55</div>
+                                                <div class="event a2">
+                                                    <div class="event-desc">
+                                                        Математик: Хичээл орох өрөө #302
+                                                    </div>
+                                                    <div class="event-time">
+                                                        Багш: Д.Болд
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="day other-month">
+                                                <div class="date">9:15 - 9:55</div>
+                                                <div class="event a2">
+                                                    <div class="event-desc">
+                                                        Математик: Хичээл орох өрөө #302
+                                                    </div>
+                                                    <div class="event-time">
+                                                        Багш: Д.Болд
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="day other-month">
+                                                <div class="date">9:15 - 9:55</div>
+                                                <div class="event a4">
+                                                    <div class="event-desc">
+                                                        Түүх: Хичээл орох өрөө #202
+                                                    </div>
+                                                    <div class="event-time">
+                                                        Багш: Б.Буянаа
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="day other-month">
+                                                <div class="date">9:15 - 9:55</div>
+                                                <div class="event a8">
+                                                    <div class="event-desc">
+                                                        Биеийн тамир: Хичээл орох өрөө #Тамирын заал
+                                                    </div>
+                                                    <div class="event-time">
+                                                        Багш: А.Дорж
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                        </ul>
+
+                                        <!-- egnee 3 -->
+
+                                        <ul class="days">
+                                            <li class="day">
+                                                <div class="date">10:00 - 10:40</div>
+                                                <div class="event a10">
+                                                    <div class="event-desc">
+                                                        Гадаад хэл: Хичээл орох өрөө #204
+                                                    </div>
+                                                    <div class="event-time">
+                                                        Багш: Б.Ариун
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="day other-month">
+                                                <div class="date">10:00 - 10:40</div>
+                                                <div class="event a7">
+                                                    <div class="event-desc">
+                                                        Хүн нийгэм: Хичээл орох өрөө #107
+                                                    </div>
+                                                    <div class="event-time">
+                                                        Багш: У.Урнаа
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="day other-month">
+                                                <div class="date">10:00 - 10:40</div>
+                                                <div class="event a10">
+                                                    <div class="event-desc">
+                                                        Гадаад хэл: Хичээл орох өрөө #204
+                                                    </div>
+                                                    <div class="event-time">
+                                                        Багш: Б.Ариун
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="day other-month">
+                                                <div class="date">10:00 - 10:40</div>
+                                                <div class="event a6">
+                                                    <div class="event-desc">
+                                                        Дуу хөгжим: Хичээл орох өрөө #Урлаг заал
+                                                    </div>
+                                                    <div class="event-time">
+                                                        Багш: С.Уянга
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="day other-month">
+                                                <div class="date">10:00 - 10:40</div>
+                                                <div class="event a9">
+                                                    <div class="event-desc">
+                                                        Сонгон хичээл: Хичээл орох өрөө #307
+                                                    </div>
+                                                    <div class="event-time">
+                                                        Багш: С.Туул
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                        </ul>
+
+                                        <!-- egnee 4 -->
+
+                                        <ul class="days">
+                                            <li class="day">
+                                                <div class="date">10:45 - 11:25</div>
+                                                <div class="event a4">
+                                                    <div class="event-desc">
+                                                        Түүх: Хичээл орох өрөө #202
+                                                    </div>
+                                                    <div class="event-time">
+                                                        Багш: Б.Буянаа
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="day other-month">
+                                                <div class="date">10:45 - 11:25</div>
+                                                <div class="event a5">
+                                                    <div class="event-desc">
+                                                        Хүн байгаль: Хичээл орох өрөө #208
+                                                    </div>
+                                                    <div class="event-time">
+                                                        Багш: Б.Бат
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="day other-month">
+                                                <div class="date">10:45 - 11:25</div>
+                                                <div class="event a4">
+                                                    <div class="event-desc">
+                                                        Түүх: Хичээл орох өрөө #202
+                                                    </div>
+                                                    <div class="event-time">
+                                                        Багш: Б.Буянаа
+                                                    </div>
+                                                </div>
+
+                                            <li class="day other-month">
+                                                <div class="date">10:45 - 11:25</div>
+                                                <div class="event a9">
+                                                    <div class="event-desc">
+                                                        Сонгон хичээл: Хичээл орох өрөө #307
+                                                    </div>
+                                                    <div class="event-time">
+                                                        Багш: С.Туул
+                                                    </div>
+                                                </div>
+
+                                            </li>
+                                            <li class="day other-month">
+                                                <div class="date">10:45 - 11:25</div>
+                                                <div class="event a3">
+                                                    <div class="event-desc">
+                                                        Иргэний боловсрол: Хичээл орох өрөө #305
+                                                    </div>
+                                                    <div class="event-time">
+                                                        Багш: А.Хишигээ
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+
+                                        <!-- egnee 5 -->
+
+                                        <ul class="days">
+                                            <li class="day">
+                                                <div class="date">11:30 - 12:10</div>
+                                                <div class="event a7">
+                                                    <div class="event-desc">
+                                                        Хүн нийгэм: Хичээл орох өрөө #107
+                                                    </div>
+                                                    <div class="event-time">
+                                                        Багш: У.Урнаа
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="day other-month">
+                                                <div class="date">11:30 - 12:10</div>
+                                                <div class="event a6">
+                                                    <div class="event-desc">
+                                                        Дуу хөгжим: Хичээл орох өрөө #Урлаг заал
+                                                    </div>
+                                                    <div class="event-time">
+                                                        Багш: С.Уянга
+                                                    </div>
+                                                </div>
+
+                                            </li>
+                                            <li class="day other-month">
+                                                <div class="date">11:30 - 12:10</div>
+                                                <div class="event a9">
+                                                    <div class="event-desc">
+                                                        Сонгон хичээл: Хичээл орох өрөө #307
+                                                    </div>
+                                                    <div class="event-time">
+                                                        Багш: С.Туул
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="day other-month">
+                                                <div class="date">11:30 - 12:10</div>
+                                                <div class="event a10">
+                                                    <div class="event-desc">
+                                                        Гадаад хэл: Хичээл орох өрөө #204
+                                                    </div>
+                                                    <div class="event-time">
+                                                        Багш: Б.Ариун
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="day other-month">
+                                                <div class="date">11:30 - 12:10</div>
+                                                <div class="event a2">
+                                                    <div class="event-desc">
+                                                        Математик: Хичээл орох өрөө #302
+                                                    </div>
+                                                    <div class="event-time">
+                                                        Багш: Д.Болд
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                        </ul>
+
+                                        <!-- egnee 6 -->
+
+                                        <ul class="days">
+                                            <li class="day">
+                                                <div class="date">12:20 - 13:00</div>
+                                                <div class="event a9">
+                                                    <div class="event-desc">
+                                                        Сонгон хичээл: Хичээл орох өрөө #307
+                                                    </div>
+                                                    <div class="event-time">
+                                                        Багш: С.Туул
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="day other-month">
+                                                <div class="date">12:20 - 13:00</div>
+                                                <div class="event a9">
+                                                    <div class="event-desc">
+                                                        Сонгон хичээл: Хичээл орох өрөө #307
+                                                    </div>
+                                                    <div class="event-time">
+                                                        Багш: С.Туул
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="day other-month">
+                                                <div class="date">12:20 - 13:00</div>
+                                            </li>
+                                            <li class="day other-month">
+                                                <div class="date">12:20 - 13:00</div>
+                                                <div class="event a9">
+                                                    <div class="event-desc">
+                                                        Сонгон хичээл: Хичээл орох өрөө #307
+                                                    </div>
+                                                    <div class="event-time">
+                                                        Багш: С.Туул
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="day other-month">
+                                                <div class="date">12:20 - 13:00</div>
+                                            </li>
+
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <script src="assets/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="assets/plugins/datatables/datatables.min.js"></script>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

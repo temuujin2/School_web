@@ -1,0 +1,600 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <title>Dreamchat - Dashboard</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="assets/css/feathericon.min.css">
+
+    <link rel="stylesheet" href="assets/plugins/morris/morris.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="main-wrapper">
+
+        <div class="header">
+
+            <div class="header-left">
+                <div class="container-logo">
+                    <h1>TEMUULEL<b>•</b></h1>
+
+                    <span>SCHOOL OF</span>
+                    <p>ULAANBAATAR</p>
+                </div>
+            </div>
+
+            <a href="javascript:void(0);" id="toggle_btn">
+                <i class="fe fe-text-align-left"></i>
+            </a>
+            <div class="top-nav-search">
+                <form>
+                    <input type="text" class="form-control" placeholder="Search here">
+                    <button class="btn" type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+
+            <a class="mobile_btn" id="mobile_btn">
+                <i class="fa fa-bars"></i>
+            </a>
+
+
+            <ul class="nav user-menu">
+
+                <li class="nav-item dropdown noti-dropdown">
+                    <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
+                        <i class="fa fa-bell"></i> <span class="badge badge-pill">3</span>
+                    </a>
+                    <div class="dropdown-menu notifications">
+                        <div class="topnav-dropdown-header">
+                            <span class="notification-title">Мэдээллийн шинэчлэлт</span>
+                            <a href="javascript:void(0)" class="clear-noti"> Бүгдийг устгах </a>
+                        </div>
+                        <div class="noti-content">
+                            <ul class="notification-list">
+                                <li class="notification-message">
+                                    <a href="#">
+                                        <div class="media d-flex">
+                                            <span class="avatar avatar-sm flex-shrink-0">
+                                                <img class="avatar-img rounded-circle" alt="User Image"
+                                                    src="assets/img/profiles/avatar-02.jpg">
+                                            </span>
+                                            <div class="media-body flex-grow-1">
+                                                <p class="noti-details"><span class="noti-title">Болд багш</span>
+                                                    шалгалтын дүн <span class="noti-title">нэмж орууллаа</span></p>
+                                                <p class="noti-time"><span class="notification-time">4 минутын
+                                                        өмнө</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="#">
+                                        <div class="media d-flex">
+                                            <span class="avatar avatar-sm flex-shrink-0">
+                                                <img class="avatar-img rounded-circle" alt="User Image"
+                                                    src="assets/img/profiles/avatar-11.jpg">
+                                            </span>
+                                            <div class="media-body flex-grow-1">
+                                                <p class="noti-details"><span class="noti-title">Цэцэгээ багш</span>
+                                                    хичээлийн ирц <span class="noti-title">нэмж орууллаа</span></p>
+                                                <p class="noti-time"><span class="notification-time">6 минутын
+                                                        өмнө</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="#">
+                                        <div class="media d-flex">
+                                            <span class="avatar avatar-sm flex-shrink-0">
+                                                <img class="avatar-img rounded-circle" alt="User Image"
+                                                    src="assets/img/profiles/avatar-17.jpg">
+                                            </span>
+                                            <div class="media-body flex-grow-1">
+                                                <p class="noti-details"><span class="noti-title">Эрдэнэ багш</span>
+                                                    Биеийн тамирын зөвлөмж <span class="noti-title">нэмж орууллаа</span>
+                                                </p>
+                                                <p class="noti-time"><span class="notification-time">8 минутын
+                                                        өмнө</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="#">
+                                        <div class="media d-flex">
+                                            <span class="avatar avatar-sm flex-shrink-0">
+                                                <img class="avatar-img rounded-circle" alt="User Image"
+                                                    src="assets/img/profiles/avatar-13.jpg">
+                                            </span>
+                                            <div class="media-body flex-grow-1">
+                                                <p class="noti-details"><span class="noti-title">
+                                                        Сургалтын алба</span> хичээлийн төлөвлөгөө <span
+                                                        class="noti-title">нэмж
+                                                        орууллаа</span></p>
+                                                <p class="noti-time"><span class="notification-time">12 минутын
+                                                        өмнө</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="topnav-dropdown-footer">
+                            <a href="#">Нийт мэдээллийг харах</a>
+                        </div>
+                    </div>
+                </li>
+
+
+                <li class="nav-item dropdown has-arrow">
+                    <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
+                        <span class="user-img"><img class="rounded-circle" src="assets/img/profiles/avatar-01.jpg"
+                                width="31" alt="Seema Sisty"></span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <div class="user-header">
+                            <div class="avatar avatar-sm">
+                                <img src="assets/img/profiles/avatar-01.jpg" alt="User Image"
+                                    class="avatar-img rounded-circle">
+                            </div>
+                            <div class="user-text">
+                                <h6>Э. Тэмүүлэл</h6>
+                                <h6>6а анги</h6>
+                            </div>
+                        </div>
+                        <a class="dropdown-item" href="general.html">Миний мэдээлэл</a>
+                        <a class="dropdown-item" href="general.html">Тохиргоо</a>
+                        <a class="dropdown-item" href="login.html">Гарах</a>
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-inner slimscroll">
+                <div id="sidebar-menu" class="sidebar-menu">
+                    <ul>
+                        <li class="menu-title">
+                        </li>
+                        <li>
+                            <a href="index.html"><i class="fe fe-home"></i> <span>Нүүр</span></a>
+                        </li>
+                        <li class="submenu">
+                            <a href="#"><i class="fe fe-users"></i> <span> Анги </span> <span
+                                    class="menu-arrow"></span></a>
+                            <ul style="display: none;">
+                                <li><a href="teachers.html"> Багш нар </a></li>
+                                <li><a href="students.html"> Ангийн хүүхдүүд </a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu">
+                            <a href="#"><i class="fe fe-gear"></i> <span> Хувийн мэдээлэл</span> <span
+                                    class="menu-arrow"></span></a>
+                            <ul style="display: none;">
+                                <li><a href="general.html">Миний мэдээлэл</a></li>
+                                <li><a href="mydata.html">Миний сан </a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="food.html"><i class="fe fe-file"></i> <span>Үдийн хоол</span></a>
+                        </li>
+                        <li>
+                            <a href="vector-maps.html"><i class="fe fe-map"></i> <span>Автобусны чиглэл</span></a>
+                        </li>
+                        <li>
+                            <a href="tuluvluguu.html"><i class="fe fe-vector"></i> <span>Сургалтын төлөвлөгөө</span></a>
+                        </li>
+                        <li class="submenu">
+                            <a href="#"><i class="fe fe-layout"></i> <span> Сургалт<span
+                                        class="menu-arrow"></span></span></a>
+                            <ul style="display: none;">
+                                <li><a href="durem.html">Дүрэм журам</a></li>
+                                <li><a href="tulbur.html">Төлбөрийн мэдээлэл</a></li>
+                                <li><a href="sudalgaa.html">Судалгаа</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu">
+                            <a href="#"><i class="fe fe-table"></i> <span> Хичээл <span
+                                        class="menu-arrow"></span></span></a>
+                            <ul style="display: none;">
+                                <li><a href="hicheel-songolt.html" class="active">Хичээл сонголт </a></li>
+                                <li><a href="huviar.html">Хичээлийн хувиар </a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="page-wrapper">
+            <div class="content container-fluid">
+
+                <div class="page-header">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h3 class="page-title">Хичээл сонголт</h3>
+                            <ul class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">Нүүр</a></li>
+                                <li class="breadcrumb-item active">Хичээл сонголт</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Үндсэн сонгох хичээлүүд 1</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table mb-0">
+                                        <thead>
+                                            <tr>
+                                                <th>Багшийн нэр</th>
+                                                <th>Заах хичээл</th>
+                                                <th>Сонголт хийх</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>С.Цэцэгээ</td>
+                                                <td>Монгол хэл</td>
+                                                <td><a href="tables-basic.html">Сонгох&#160;√</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Д.Болд</td>
+                                                <td>Математик</td>
+                                                <td><a href="tables-basic.html">Сонгох&#160;√</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>А.Хишигээ</td>
+                                                <td>Иргэний боловсрол</td>
+                                                <td><a href="tables-basic.html">Сонгох&#160;√</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Үндсэн сонгох хичээлүүд 2</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-striped mb-0">
+                                        <thead>
+                                            <tr>
+                                                <th>Багшийн нэр</th>
+                                                <th>Заах хичээл</th>
+                                                <th>Сонголт хийх</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Б.Буянаа</td>
+                                                <td>Түүх</td>
+                                                <td><a href="tables-basic.html">Сонгох&#160;√</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>У.Урнаа</td>
+                                                <td>Хүн нийгэм</td>
+                                                <td><a href="tables-basic.html">Сонгох&#160;√</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Б.Бат</td>
+                                                <td>Хүн байгаль</td>
+                                                <td><a href="tables-basic.html">Сонгох&#160;√</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Нэмэлт хичээлүүд 1</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered mb-0">
+                                        <thead>
+                                            <tr>
+                                                <th>Багшийн нэр</th>
+                                                <th>Заах хичээл</th>
+                                                <th>Сонголт хийх</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>С.Уянга</td>
+                                                <td>Дуу хөгжим</td>
+                                                <td><a href="tables-basic.html">Сонгох&#160;√</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>А.Дорж</td>
+                                                <td>Биеийн тамир</td>
+                                                <td><a href="tables-basic.html">Сонгох&#160;√</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Б.Ариун</td>
+                                                <td>Гадаад хэл</td>
+                                                <td><a href="tables-basic.html">Сонгох&#160;√</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Нэмэлт хичээлүүд 2</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-hover mb-0">
+                                        <thead>
+                                            <tr>
+                                                <th>Багшийн нэр</th>
+                                                <th>Заах хичээл</th>
+                                                <th>Сонголт хийх</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Д.Долгор</td>
+                                                <td>Хувь хүний хөгжил</td>
+                                                <td><a href="tables-basic.html">Сонгох&#160;√</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Б.Байгалмаа</td>
+                                                <td>Иргэний ёс зүй</td>
+                                                <td><a href="tables-basic.html">Сонгох&#160;√</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Д.Дондог</td>
+                                                <td>Хөдөлмөр</td>
+                                                <td><a href="tables-basic.html">Сонгох&#160;√</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Сонгон хичээлүүд</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table mb-0">
+                                        <thead>
+                                            <tr>
+                                                <th>Багшийн нэр</th>
+                                                <th>Заах хичээл</th>
+                                                <th>Сонголт хийх</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>С.Эрдэнэ</td>
+                                                <td>Усан сэлэлт</td>
+                                                <td><a href="tables-basic.html">Сонгох&#160;√</a>
+                                                </td>
+                                            </tr>
+                                            <tr class="table-primary">
+                                                <td>Б.Баяр</td>
+                                                <td>Уран зураг</td>
+                                                <td><a href="tables-basic.html">Сонгох&#160;√</a>
+                                                </td>
+                                            </tr>
+                                            <tr class="table-secondary">
+                                                <td>С.Балжир</td>
+                                                <td>Компютерийн үндэс</td>
+                                                <td><a href="tables-basic.html">Сонгох&#160;√</a>
+                                                </td>
+                                            </tr>
+                                            <tr class="table-success">
+                                                <td>С.Эрдэм</td>
+                                                <td>Програмчлалын хэл</td>
+                                                <td><a href="tables-basic.html">Сонгох&#160;√</a>
+                                                </td>
+                                            </tr>
+                                            <tr class="table-danger">
+                                                <td>С.Балжир</td>
+                                                <td>Phyton хэл</td>
+                                                <td><a href="tables-basic.html">Сонгох&#160;√</a>
+                                                </td>
+                                            </tr>
+                                            <tr class="table-warning">
+                                                <td>Х.Хулан</td>
+                                                <td>Дизайны үндэс</td>
+                                                <td><a href="tables-basic.html">Сонгох&#160;√</a>
+                                                </td>
+                                            </tr>
+                                            <tr class="table-info">
+                                                <td>У.Гармаа</td>
+                                                <td>Бие хамгаалах урлаг</td>
+                                                <td><a href="tables-basic.html">Сонгох&#160;√</a>
+                                                </td>
+                                            </tr>
+                                            <tr class="table-light">
+                                                <td>М.Мандуул</td>
+                                                <td>Гар урлал</td>
+                                                <td><a href="tables-basic.html">Сонгох&#160;√</a>
+                                                </td>
+                                            </tr>
+                                            <tr class="table-dark">
+                                                <td>Х.Галдан</td>
+                                                <td>Баримал</td>
+                                                <td><a href="tables-basic.html">Сонгох&#160;√</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Нэмэлтээр сонгох хэлнүүд</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-nowrap mb-0">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Багшийн нэр</th>
+                                                <th>Заах хэл</th>
+                                                <th>Орох цагууд</th>
+                                                <th>Сонголт хийх</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Анна</td>
+                                                <td>Англи</td>
+                                                <td>12:30-14:00</td>
+                                                <td><a href="tables-basic.html">Сонгох&#160;√</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Иван</td>
+                                                <td>Орос</td>
+                                                <td>13:30-15:00</td>
+                                                <td><a href="tables-basic.html">Сонгох&#160;√</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Ли</td>
+                                                <td>Хятад</td>
+                                                <td>14:10-15:40</td>
+                                                <td><a href="tables-basic.html">Сонгох&#160;√</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>Жонас</td>
+                                                <td>Герман</td>
+                                                <td>15:30-17:00</td>
+                                                <td><a href="tables-basic.html">Сонгох&#160;√</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>Чунг-хи</td>
+                                                <td>Солонгос</td>
+                                                <td>12:30-14:00</td>
+                                                <td><a href="tables-basic.html">Сонгох&#160;√</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td>Аками</td>
+                                                <td>Япон</td>
+                                                <td>13:10-14:40</td>
+                                                <td><a href="tables-basic.html">Сонгох&#160;√</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>7</td>
+                                                <td>Софиа</td>
+                                                <td>Испан</td>
+                                                <td>12:00-13:30</td>
+                                                <td><a href="tables-basic.html">Сонгох&#160;√</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>8</td>
+                                                <td>Дениз</td>
+                                                <td>Турк</td>
+                                                <td>14:30-16:00</td>
+                                                <td><a href="tables-basic.html">Сонгох&#160;√</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>9</td>
+                                                <td>Жорж</td>
+                                                <td>Энэтхэг</td>
+                                                <td>15:00-16:30</td>
+                                                <td><a href="tables-basic.html">Сонгох&#160;√</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
