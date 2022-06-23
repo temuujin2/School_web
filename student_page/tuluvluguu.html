@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <title>Student page</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="assets/css/feathericon.min.css">
+
+    <link rel="stylesheet" href="assets/plugins/morris/morris.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="main-wrapper">
+
+        <div class="header">
+
+            <div class="header-left">
+                <div class="container-logo">
+                    <h1>TEMUULEL<b>•</b></h1>
+
+                    <span>SCHOOL OF</span>
+                    <p>ULAANBAATAR</p>
+                </div>
+            </div>
+
+            <a href="javascript:void(0);" id="toggle_btn">
+                <i class="fe fe-text-align-left"></i>
+            </a>
+            <div class="top-nav-search">
+                <form>
+                    <input type="text" class="form-control" placeholder="Хайлт хийх">
+                    <button class="btn" type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+
+            <a class="mobile_btn" id="mobile_btn">
+                <i class="fa fa-bars"></i>
+            </a>
+
+
+            <ul class="nav user-menu">
+
+                <li class="nav-item dropdown noti-dropdown">
+                    <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
+                        <i class="fa fa-bell"></i> <span class="badge badge-pill">3</span>
+                    </a>
+                    <div class="dropdown-menu notifications">
+                        <div class="topnav-dropdown-header">
+                            <span class="notification-title">Мэдээллийн шинэчлэлт</span>
+                            <a href="javascript:void(0)" class="clear-noti"> Бүгдийг устгах </a>
+                        </div>
+                        <div class="noti-content">
+                            <ul class="notification-list">
+                                <li class="notification-message">
+                                    <a href="#">
+                                        <div class="media d-flex">
+                                            <span class="avatar avatar-sm flex-shrink-0">
+                                                <img class="avatar-img rounded-circle" alt="User Image"
+                                                    src="assets/img/profiles/avatar-02.jpg">
+                                            </span>
+                                            <div class="media-body flex-grow-1">
+                                                <p class="noti-details"><span class="noti-title">Болд багш</span>
+                                                    шалгалтын дүн <span class="noti-title">нэмж орууллаа</span></p>
+                                                <p class="noti-time"><span class="notification-time">4 минутын
+                                                        өмнө</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="#">
+                                        <div class="media d-flex">
+                                            <span class="avatar avatar-sm flex-shrink-0">
+                                                <img class="avatar-img rounded-circle" alt="User Image"
+                                                    src="assets/img/profiles/avatar-11.jpg">
+                                            </span>
+                                            <div class="media-body flex-grow-1">
+                                                <p class="noti-details"><span class="noti-title">Цэцэгээ багш</span>
+                                                    хичээлийн ирц <span class="noti-title">нэмж орууллаа</span></p>
+                                                <p class="noti-time"><span class="notification-time">6 минутын
+                                                        өмнө</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="#">
+                                        <div class="media d-flex">
+                                            <span class="avatar avatar-sm flex-shrink-0">
+                                                <img class="avatar-img rounded-circle" alt="User Image"
+                                                    src="assets/img/profiles/avatar-17.jpg">
+                                            </span>
+                                            <div class="media-body flex-grow-1">
+                                                <p class="noti-details"><span class="noti-title">Эрдэнэ багш</span>
+                                                    Биеийн тамирын зөвлөмж <span class="noti-title">нэмж орууллаа</span>
+                                                </p>
+                                                <p class="noti-time"><span class="notification-time">8 минутын
+                                                        өмнө</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="#">
+                                        <div class="media d-flex">
+                                            <span class="avatar avatar-sm flex-shrink-0">
+                                                <img class="avatar-img rounded-circle" alt="User Image"
+                                                    src="assets/img/profiles/avatar-13.jpg">
+                                            </span>
+                                            <div class="media-body flex-grow-1">
+                                                <p class="noti-details"><span class="noti-title">
+                                                        Сургалтын алба</span> хичээлийн төлөвлөгөө <span
+                                                        class="noti-title">нэмж
+                                                        орууллаа</span></p>
+                                                <p class="noti-time"><span class="notification-time">12 минутын
+                                                        өмнө</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="topnav-dropdown-footer">
+                            <a href="#">Нийт мэдээллийг харах</a>
+                        </div>
+                    </div>
+                </li>
+
+
+                <li class="nav-item dropdown has-arrow">
+                    <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
+                        <span class="user-img"><img class="rounded-circle" src="assets/img/profiles/avatar-01.jpg"
+                                width="31" alt="Seema Sisty"></span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <div class="user-header">
+                            <div class="avatar avatar-sm">
+                                <img src="assets/img/profiles/avatar-01.jpg" alt="User Image"
+                                    class="avatar-img rounded-circle">
+                            </div>
+                            <div class="user-text">
+                                <h6>Э. Тэмүүлэл</h6>
+                                <h6>6а анги</h6>
+                            </div>
+                        </div>
+                        <a class="dropdown-item" href="general.html">Миний мэдээлэл</a>
+                        <a class="dropdown-item" href="general.html">Тохиргоо</a>
+                        <a class="dropdown-item" href="login.html">Гарах</a>
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-inner slimscroll">
+                <div id="sidebar-menu" class="sidebar-menu">
+                    <ul>
+                        <li class="menu-title">
+                        </li>
+                        <li>
+                            <a href="index.html"><i class="fe fe-home"></i> <span>Нүүр</span></a>
+                        </li>
+                        <li class="submenu">
+                            <a href="#"><i class="fe fe-users"></i> <span> Анги </span> <span
+                                    class="menu-arrow"></span></a>
+                            <ul style="display: none;">
+                                <li><a href="teachers.html"> Багш нар </a></li>
+                                <li><a href="students.html"> Ангийн хүүхдүүд </a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu">
+                            <a href="#"><i class="fe fe-gear"></i> <span> Хувийн мэдээлэл</span> <span
+                                    class="menu-arrow"></span></a>
+                            <ul style="display: none;">
+                                <li><a href="general.html">Миний мэдээлэл</a></li>
+                                <li><a href="mydata.html">Миний сан </a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="food.html"><i class="fe fe-file"></i> <span>Үдийн хоол</span></a>
+                        </li>
+                        <li>
+                            <a href="vector-maps.html"><i class="fe fe-map"></i> <span>Автобусны чиглэл</span></a>
+                        </li>
+                        <li class="active">
+                            <a href="tuluvluguu.html"><i class="fe fe-vector"></i> <span>Сургалтын төлөвлөгөө</span></a>
+                        </li>
+                        <li class="submenu">
+                            <a href="#"><i class="fe fe-layout"></i> <span> Сургалт<span
+                                        class="menu-arrow"></span></span></a>
+                            <ul style="display: none;">
+                                <li><a href="durem.html">Дүрэм журам</a></li>
+                                <li><a href="tulbur.html">Төлбөрийн мэдээлэл</a></li>
+                                <li><a href="sudalgaa.html">Судалгаа</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu">
+                            <a href="#"><i class="fe fe-table"></i> <span> Хичээл <span
+                                        class="menu-arrow"></span></span></a>
+                            <ul style="display: none;">
+                                <li><a href="hicheel-songolt.html">Хичээл сонголт </a></li>
+                                <li><a href="huviar.html">Хичээлийн хувиар </a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="page-wrapper">
+            <div class="content container-fluid">
+
+                <div class="page-header">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h3 class="page-title">Сургалтын төлөвлөгөө</h3>
+                            <ul class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">Нүүр</a></li>
+                                <li class="breadcrumb-item active">Төлөвлөгөө</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12">
+
+                        <section class="comp-section">
+                            <div class="section-header">
+                                <h3 class="section-title">2022 оны хичээлийн жилийн төлөвлөгөө</h3>
+                                <div class="line"></div>
+                            </div>
+
+                        </section>
+                        <!-- ------------------------------- -->
+
+
+                        <section class="comp-section">
+                            <div class="row">
+                                <div class="col-md-12">
+
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h4 class="card-title">Заавал үзэх хичээлүүд</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="hicheel-songolt">
+                                                <div class="box-2 second-1">
+                                                    <div class="second-1-1">№</div>
+                                                    <div class="second-1-2">Хичээлийн нэр</div>
+                                                    <div class="second-1-3">Багшийн нэр</div>
+                                                    <div class="second-1-4">Анги</div>
+                                                    <div class="second-1-4">Дүн</div>
+                                                    <div class="second-1-4">үнэлгээ</div>
+                                                </div>
+                                                <div class="box-2 second-2">
+                                                    <div class="second-1-1">1</div>
+                                                    <div class="second-1-2">Монгол хэл</div>
+                                                    <div class="second-1-3">С.Цэцэгээ</div>
+                                                    <div class="second-1-4">№301</div>
+                                                    <div class="second-1-5">95</div>
+                                                    <div class="second-1-6">А+</div>
+                                                </div>
+                                                <div class="box-2 second-3">
+                                                    <div class="second-1-1">2</div>
+                                                    <div class="second-1-2">Математик</div>
+                                                    <div class="second-1-3">Д.Болд</div>
+                                                    <div class="second-1-4">№302</div>
+                                                    <div class="second-1-5">95</div>
+                                                    <div class="second-1-6">А+</div>
+                                                </div>
+                                                <div class="box-2 second-4">
+                                                    <div class="second-1-1">3</div>
+                                                    <div class="second-1-2">Иргэний боловсрол</div>
+                                                    <div class="second-1-3">А.Хишигээ</div>
+                                                    <div class="second-1-4">№305</div>
+                                                    <div class="second-1-5">95</div>
+                                                    <div class="second-1-6">А+</div>
+                                                </div>
+                                                <div class="box-2 second-5">
+                                                    <div class="second-1-1">4</div>
+                                                    <div class="second-1-2">Түүх</div>
+                                                    <div class="second-1-3">Б.Буянаа</div>
+                                                    <div class="second-1-4">№202</div>
+                                                    <div class="second-1-5">95</div>
+                                                    <div class="second-1-6">А+</div>
+                                                </div>
+                                                <div class="box-2 second-6">
+                                                    <div class="second-1-1">5</div>
+                                                    <div class="second-1-2">Хүн нийгэм</div>
+                                                    <div class="second-1-3">У.Урнаа</div>
+                                                    <div class="second-1-4">№107</div>
+                                                    <div class="second-1-5">95</div>
+                                                    <div class="second-1-6">А+</div>
+                                                </div>
+                                                <div class="box-2 second-7">
+                                                    <div class="second-1-1">6</div>
+                                                    <div class="second-1-2">Хүн байгаль</div>
+                                                    <div class="second-1-3">Б.Бат</div>
+                                                    <div class="second-1-4">№208</div>
+                                                    <div class="second-1-5">95</div>
+                                                    <div class="second-1-6">А+</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-4 d-flex">
+                                    <div class="card flex-fill">
+                                        <div class="card-header">
+                                            <h4 class="card-title" style="font-size: 20px;">Сонгон үзэх хичээлүүд А</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <ol class="mb-0">
+                                                <li>Усан сэлэлт </li>
+                                                <hr>
+                                                <li>Уран зураг</li>
+                                                <hr>
+                                                <li>Компютерийн үндэс </li>
+                                                <hr>
+                                                <li>Програмчлалын хэл</li>
+                                                <hr>
+                                                <li>Phyton хэл </li>
+
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 d-flex">
+                                    <div class="card flex-fill">
+                                        <div class="card-header">
+                                            <h4 class="card-title" style="font-size: 20px;">Сонгон судлах хичээлүүд Б
+                                            </h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <ol class="mb-0">
+                                                <li>Дизайны үндэс </li>
+                                                <hr>
+                                                <li>Бие хамгаалах урлаг </li>
+                                                <hr>
+                                                <li>Гар урлал </li>
+                                                <hr>
+                                                <li>Баримал </li>
+                                                <hr>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 d-flex">
+                                    <div class="card flex-fill">
+                                        <div class="card-header">
+                                            <h4 class="card-title" style="font-size: 20px;">Сонгон судлах хэлүүд</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <ol class="mb-0">
+                                                <li>Анна Англи </li>
+                                                <hr>
+                                                <li>Иван Орос </li>
+                                                <hr>
+                                                <li>Ли Хятад </li>
+                                                <hr>
+                                                <li>Жонас Герман </li>
+                                                <hr>
+                                                <li>Чунг-хи Солонгос </li>
+                                                <hr>
+                                                <li>Аками Япон </li>
+                                                <hr>
+                                                <li>Софиа Испан</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <script src="assets/js/script.js"></script>
+
+    <script>
+
+    </script>
+</body>
+
+</html>
