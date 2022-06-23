@@ -4639,7 +4639,7 @@ table .actions .btn {
   grid-template-columns: 0.08fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   width: 100%;
-  max-height: 250px;
+  max-height: 200px;
   height: auto;
 }
 .first-1, .first-2, .first-3 {
@@ -4671,7 +4671,7 @@ table .actions .btn {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   width: 100%;
-  max-height: 470px;
+  max-height: 320px;
   height: auto;
 }
 .box-2 {
@@ -4869,6 +4869,7 @@ table .actions .btn {
 	
 }
 /* ========================== Hicheel songolt end ========================== */
+
 /* ========================== Food section ================================= */
 .container-sections {
   width: 100%;
@@ -4997,21 +4998,20 @@ table .actions .btn {
   background: #b32020;
   color: white;
 }
-.cart-items {
-  flex-wrap: wrap;
-}
 .product-img {
     width: 100%;
     max-width: 200px;
     margin: 0 auto;
 }
-.card-body-2{
-  text-align: center;
-}
+
 .card-body p {
   margin-top: 10px;
 }
+.card-body-2{ 
+  text-align: center;
+}
 .card-body button {
+  margin: auto;
   background: orange;
   padding: 10px;
 }
@@ -5041,3 +5041,5 @@ table .actions .btn {
     letter-spacing: 0.05em;
     text-shadow: 4px 4px 0px #d5d5d5, 7px 7px 0px rgba(0, 0, 0, 0.2);
 }
+
+
