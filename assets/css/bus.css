@@ -288,8 +288,11 @@ h4 b {
     width: 100%;
     max-width: 780px;
     height: 350px;
-    background: #dddddd;
+    background-image: url(../img/HOW-DO-TRACKING-APPS-HELP-MANAGE-SCHOOL-BUSES-1536x787.png);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
+
 /* ------------- middle content end ------------------ */
 /* ------------- Real map start ---------------------- */
 .text-real-map h1 {
