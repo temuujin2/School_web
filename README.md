@@ -14,17 +14,6 @@
 
 - [@Угтахбаяр](https://github.com/Ugtakh)
 
-
-## Багийн гишүүд
-
-- [@Азжаргал](https://github.com/AzjargalB)
-- [@Төгсжаргал](https://github.com/tugsoz)
-- [@Алтандорж](https://github.com/)
-- [@Лхагвасүрэн](https://github.com/lhgsuren)
-- [@Мандах](https://github.com/Mandakh0114)
-- [@Тэмүүжин](https://github.com/temuujin2)
-
-
 ## 🛠 Сайтын хэрэглэгдхүүнүүд
 Javascript, HTML, CSS, Figma.com, Mockup, Photoshop, After Effect, Firebase.google.com, 
 <br>Github.com, Fontawesome.com
